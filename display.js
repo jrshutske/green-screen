@@ -9,23 +9,17 @@ function saveData() {
 
   fs.writeFile('spData.json', spg.getSharePointData(), function (err) {
     if (err) throw err;
-    console.log('New data saved!');
-
   });
 myfiles = {}
   myfiles.topleft = fs.readdirSync('./images/topleft');
-  myfiles.bottomleft =fs.readdirSync('./images/bottomleft');
-  myfiles.topright =fs.readdirSync('./images/topright');
+  myfiles.bottomleft = fs.readdirSync('./images/bottomleft');
+  myfiles.topright = fs.readdirSync('./images/topright');
   myfiles.bottomright =fs.readdirSync('./images/bottomright');
-
-
 
   fs.writeFile('images.json', JSON.stringify(myfiles, null, 4), function (err) {
     if (err) throw err;
-    console.log('New data saved!');
-
   });
-  console.log(myfiles)
+  console.log('New data saved!');
 }
  saveData();
 
