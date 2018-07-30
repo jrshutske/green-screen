@@ -1,6 +1,14 @@
 $(document).ready(function(){
 
 
+  $.getJSON("images.json", function(images) {
+    console.log(images.topleft);
+    console.log(images.bottomleft);
+    console.log(images.topright);
+    console.log(images.bottomright);
+  });
+
+
 setInterval(function() {
   $('#employees > table:first')
     .fadeOut(2000)
@@ -13,8 +21,6 @@ setInterval(function() {
 var myVar = setInterval(myTimer, 100000);
 myTimer();
 function myTimer() {
-
-
   $("table").remove();
 
   $.getJSON("spData.json", function(json) {
