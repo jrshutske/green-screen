@@ -1,0 +1,209 @@
+<table>
+<tr><td>Robert Anex</td><td>3123</td></tr>
+<tr><td>Pam Arnold</td><td>3162</td></tr>
+<tr><td>Samuel Ast</td><td></td></tr>
+<tr><td>Fras Baasher</td><td>2120</td></tr>
+<tr><td>Michael Baker</td><td>3148</td></tr>
+<tr><td>PJ Barnes</td><td>3100</td></tr>
+<tr><td>Jackie Bastyr-Cooper</td><td>5150</td></tr>
+<tr><td>Donna Bates</td><td>4119</td></tr>
+<tr><td>Bruce Beihoff</td><td>5129</td></tr>
+<tr><td>Mary Blanchard</td><td>5154</td></tr>
+</table>
+<table>
+<tr><td>Eric Booth</td><td>3117</td></tr>
+<tr><td>Edward Boswell</td><td>3175</td></tr>
+<tr><td>Michael Brotz</td><td>3120</td></tr>
+<tr><td>Martin Brubaker</td><td>3175</td></tr>
+<tr><td>Brian Burger</td><td>5120</td></tr>
+<tr><td>Shalaka Burlawar</td><td>2175</td></tr>
+<tr><td>Tracy Campbell</td><td></td></tr>
+<tr><td>Anna Cates</td><td>3120</td></tr>
+<tr><td>Clint Cecil</td><td>4127</td></tr>
+<tr><td>Maria Chavez</td><td>3175</td></tr>
+</table>
+<table>
+<tr><td>Ming-Jie Chen</td><td>2120</td></tr>
+<tr><td>Zhe Chen</td><td>5120</td></tr>
+<tr><td>Kevin Chukel</td><td>2150</td></tr>
+<tr><td>Meghan Collins</td><td>1150</td></tr>
+<tr><td>Jason Coplien</td><td>5120</td></tr>
+<tr><td>Michael Corradini</td><td>5148</td></tr>
+<tr><td>Galen Cotting</td><td></td></tr>
+<tr><td>Chris DeMarco</td><td>5120</td></tr>
+<tr><td>Alden Dirks</td><td>3120</td></tr>
+<tr><td>Timothy Donohue</td><td>5166</td></tr>
+</table>
+<table>
+<tr><td>Jacob Dubie</td><td>5120</td></tr>
+<tr><td>Kayla Edwards</td><td>3120</td></tr>
+<tr><td>Elizabeth Erb</td><td>5175</td></tr>
+<tr><td>Jordi Francis</td><td>3120</td></tr>
+<tr><td>Timothy Fritsche</td><td>1189</td></tr>
+<tr><td>Hannah Gaines</td><td>3120</td></tr>
+<tr><td>Ruili Gao</td><td>2120</td></tr>
+<tr><td>Derek Gille</td><td>5120</td></tr>
+<tr><td>Bonita Goh</td><td></td></tr>
+<tr><td>Joseph Goldman</td><td>5120</td></tr>
+</table>
+<table>
+<tr><td>Jiahui (Minty) Gong</td><td>2120</td></tr>
+<tr><td>Michael Graham</td><td>4121</td></tr>
+<tr><td>Claudio Gratton</td><td>3111</td></tr>
+<tr><td>Mark Griffin</td><td>2156</td></tr>
+<tr><td>Lei Gu</td><td>3120</td></tr>
+<tr><td>Abigail Hampton</td><td>3175</td></tr>
+<tr><td>Kyle Hanson</td><td>1195</td></tr>
+<tr><td>Skye Harnsberger</td><td></td></tr>
+<tr><td>Shengzhi He</td><td>2120</td></tr>
+<tr><td>Kaitlynn Heitpas</td><td></td></tr>
+</table>
+<table>
+<tr><td>Jeremy Hemberger</td><td>3120</td></tr>
+<tr><td>Kemardo Henry</td><td>5175</td></tr>
+<tr><td>Emily Hickey</td><td>3156</td></tr>
+<tr><td>Derek Ho</td><td>2120</td></tr>
+<tr><td>Nathan Hofmeister</td><td></td></tr>
+<tr><td>Michael Howe</td><td>3120</td></tr>
+<tr><td>Rebecca Hudson</td><td>4120</td></tr>
+<tr><td>Abel Ingle</td><td>5175</td></tr>
+<tr><td>Brittany Isidore</td><td>3120</td></tr>
+<tr><td>Kate Ivancic</td><td>3175</td></tr>
+</table>
+<table>
+<tr><td>Randy Jackson</td><td>3119</td></tr>
+<tr><td>Tom Jahns</td><td>1172</td></tr>
+<tr><td>Margaret Johnson</td><td>5145</td></tr>
+<tr><td>Samuel Johnson</td><td>5175</td></tr>
+<tr><td>Amos Kaldor</td><td></td></tr>
+<tr><td>Darin Kalisak</td><td>4123</td></tr>
+<tr><td>Katie Kalkofen</td><td>3150</td></tr>
+<tr><td>Steven Karlen</td><td>2117</td></tr>
+<tr><td>Natalie Keene</td><td>5120</td></tr>
+<tr><td>Laura Ketterhagen</td><td>5160</td></tr>
+</table>
+<table>
+<tr><td>Hoon Kim</td><td>2115</td></tr>
+<tr><td>Ryan Knippel</td><td>5175</td></tr>
+<tr><td>Jade Kochanski</td><td>3175</td></tr>
+<tr><td>Phillip Kollmeyer</td><td>1166</td></tr>
+<tr><td>Wayne Kontur</td><td>5120</td></tr>
+<tr><td>Christopher Kucharik</td><td>3119</td></tr>
+<tr><td>Paige Kulzer</td><td>4175</td></tr>
+<tr><td>Ujjwal Kumar</td><td>4120</td></tr>
+<tr><td>Brian Kyle</td><td>4160</td></tr>
+<tr><td>Robert Landick</td><td>4111</td></tr>
+</table>
+<table>
+<tr><td>Greta Landis</td><td>3120</td></tr>
+<tr><td>Sophia Lawrence</td><td>3175</td></tr>
+<tr><td>Kevin Leigeb</td><td>4162</td></tr>
+<tr><td>Rachelle Lemke</td><td>5120</td></tr>
+<tr><td>Kimberly Lemmer</td><td>5120</td></tr>
+<tr><td>Grace Li</td><td>5120</td></tr>
+<tr><td>Yanding Li</td><td>2120</td></tr>
+<tr><td>Megan Lipke</td><td>3175</td></tr>
+<tr><td>Lisa Liu</td><td>4120</td></tr>
+<tr><td>Sarah Liu</td><td>2120</td></tr>
+</table>
+<table>
+<tr><td>Erin Lowe</td><td>3120</td></tr>
+<tr><td>Fachuang Lu</td><td>2119</td></tr>
+<tr><td>Griffin Lynch</td><td>5175</td></tr>
+<tr><td>Yanjun Ma</td><td>5120</td></tr>
+<tr><td>Carolyn Mahn</td><td>3120</td></tr>
+<tr><td>Anurag Mandalika</td><td>2175</td></tr>
+<tr><td>Mathew McCary</td><td>3120</td></tr>
+<tr><td>Amanda McCormick</td><td>3120</td></tr>
+<tr><td>Seth McElhinney</td><td>5120</td></tr>
+<tr><td>Mick McGee</td><td>5175</td></tr>
+</table>
+<table>
+<tr><td>Elizabeth McNamee</td><td>3120</td></tr>
+<tr><td>Dan Metzger</td><td>4152</td></tr>
+<tr><td>Lauren Meyers</td><td>3166</td></tr>
+<tr><td>Max Miao</td><td>3175</td></tr>
+<tr><td>Kevin Myers</td><td>4120</td></tr>
+<tr><td>Tina Nielsen</td><td>5156</td></tr>
+<tr><td>Alyssa Niles</td><td>5175</td></tr>
+<tr><td>Daniel Noguera</td><td>5150</td></tr>
+<tr><td>Dirk Norman</td><td>4166</td></tr>
+<tr><td>Sam Nowak</td><td>4150</td></tr>
+</table>
+<table>
+<tr><td>Gary Oates</td><td>3121</td></tr>
+<tr><td>J. Zachary Oshlag</td><td>5175</td></tr>
+<tr><td>Mark Pan</td><td>4120</td></tr>
+<tr><td>Dinesh Pattabiraman</td><td>5175</td></tr>
+<tr><td>Jose Miguel Perez</td><td>5120</td></tr>
+<tr><td>Sona Perlin</td><td>5175</td></tr>
+<tr><td>Joe Phillips</td><td>3120</td></tr>
+<tr><td>Maggie Phillips</td><td>3115</td></tr>
+<tr><td>Devon Pierret</td><td></td></tr>
+<tr><td>William Plaxico</td><td>5120</td></tr>
+</table>
+<table>
+<tr><td>Craig Poulin</td><td>5120</td></tr>
+<tr><td>Gianna Pricco</td><td></td></tr>
+<tr><td>John Ralph</td><td>2129</td></tr>
+<tr><td>Matt Regner</td><td>2120</td></tr>
+<tr><td>Ginny Renjilian</td><td></td></tr>
+<tr><td>Chantel Roberts</td><td>5175</td></tr>
+<tr><td>Troy Runge</td><td>2121</td></tr>
+<tr><td>Patricia Ryou</td><td>3175</td></tr>
+<tr><td>William Sandvold</td><td>3175</td></tr>
+<tr><td>Gregg Sanford</td><td>3113</td></tr>
+</table>
+<table>
+<tr><td>Trey Sato</td><td>4117</td></tr>
+<tr><td>Connor Sawyers</td><td>1166</td></tr>
+<tr><td>Jason Schatz</td><td>3120</td></tr>
+<tr><td>Katherine Schultz</td><td></td></tr>
+<tr><td>Jose Serate</td><td>4120</td></tr>
+<tr><td>Kelly Shaffer</td><td>4150</td></tr>
+<tr><td>Mahmoud Sharara</td><td>2127</td></tr>
+<tr><td>Adam Shea</td><td>5120</td></tr>
+<tr><td>Jack Shutske</td><td>4150</td></tr>
+<tr><td>Geoffrey Siemering</td><td>3175</td></tr>
+</table>
+<table>
+<tr><td>Laura Smith</td><td>3120</td></tr>
+<tr><td>Rebecca Smith</td><td>2120</td></tr>
+<tr><td>Stephanie Sorensen</td><td>2120</td></tr>
+<tr><td>Benjamin Sperstad</td><td>5120</td></tr>
+<tr><td>Kaitlin Stack Whitney</td><td>3120</td></tr>
+<tr><td>Kelsey Stalker</td><td></td></tr>
+<tr><td>Hayley Stoneman</td><td>5175</td></tr>
+<tr><td>James Sustachek</td><td>3120</td></tr>
+<tr><td>Taylor Tai</td><td>3120</td></tr>
+<tr><td>Ruby Tedeschi</td><td></td></tr>
+</table>
+<table>
+<tr><td>Diane Thomson</td><td>5175</td></tr>
+<tr><td>Kayla Tollefson</td><td>3160</td></tr>
+<tr><td>Mary Tremaine</td><td>4120</td></tr>
+<tr><td>Natalie Tufvesson</td><td>5175</td></tr>
+<tr><td>Vitaliy Tymokhin</td><td>2120</td></tr>
+<tr><td>Maikayeng Vang-Smith</td><td>4175</td></tr>
+<tr><td>Ricardo Vidrio</td><td></td></tr>
+<tr><td>Mark Walsh</td><td>3120</td></tr>
+<tr><td>Kevin Walters</td><td>5175</td></tr>
+<tr><td>Yong Wang</td><td>3127</td></tr>
+</table>
+<table>
+<tr><td>Shawn Westveer</td><td>4120</td></tr>
+<tr><td>Laura Williams</td><td></td></tr>
+<tr><td>Scott Williams</td><td>2162</td></tr>
+<tr><td>Matt Wisniewski</td><td>2154</td></tr>
+<tr><td>Grant Witynski</td><td></td></tr>
+<tr><td>Max Witynski</td><td>2150</td></tr>
+<tr><td>Amy Wray</td><td>3120</td></tr>
+<tr><td>Dan Xie</td><td>4120</td></tr>
+<tr><td>Megan Young</td><td>4120</td></tr>
+<tr><td>Yaoping Zhang</td><td>4154</td></tr>
+</table>
+<table>
+<tr><td>Ruxiu Zhao</td><td>5120</td></tr>
+<tr><td>Wei Zhao</td><td>2120</td></tr>
+<tr><td>Eva Ziegelhoffer</td><td>2111</td></tr>
+</table>
