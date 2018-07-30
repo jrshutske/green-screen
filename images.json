@@ -1,4 +1,6 @@
 {
+    "topleft": [],
+    "bottomleft": [],
     "topright": [
         ".DS_Store",
         "2012 Science Expeditions Fermentation in a Bag_6950938748_l.jpg",
@@ -13,18 +15,5 @@
         "Biofuels Farming Computer Game_8006973357_l.jpg",
         "Biofuels Farming Computer Game_8006978048_l.jpg"
     ],
-    "topleft": [
-        ".DS_Store",
-        "2012 Science Expeditions Fermentation in a Bag_6950938748_l.jpg",
-        "2012 Science Expeditions Fermentation in a Bag_6950939240_l.jpg",
-        "2012 Science Expeditions Fermentation in a Bag_6950990828_l.jpg",
-        "BIE Lab Tours_7796882566_l.jpg",
-        "Bioenergy Institute for Educators 2010_4796080769_l.jpg",
-        "Bioenergy Institute for Educators 2010_4796125655_l.jpg",
-        "Bioenergy Institute for Educators 2010_4796133119_l.jpg",
-        "Bioenergy Institute for Educators 2010_4796736512_l.jpg",
-        "Bioenergy Institute for Educators 2010_4838648250_l.jpg",
-        "Biofuels Farming Computer Game_8006973357_l.jpg",
-        "Biofuels Farming Computer Game_8006978048_l.jpg"
-    ]
+    "bottomright": []
 }
