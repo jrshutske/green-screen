@@ -1,7 +1,9 @@
 {
-    "topleft": [],
-    "bottomleft": [],
-    "topright": [
+    "topleft": [
+        "Energy Summit Video Final-20161010.mp4",
+        "wei-s_60fps_4ph_10pd_noon.avi"
+    ],
+    "bottomleft": [
         ".DS_Store",
         "2012 Science Expeditions Fermentation in a Bag_6950938748_l.jpg",
         "2012 Science Expeditions Fermentation in a Bag_6950939240_l.jpg",
@@ -13,7 +15,63 @@
         "Bioenergy Institute for Educators 2010_4796736512_l.jpg",
         "Bioenergy Institute for Educators 2010_4838648250_l.jpg",
         "Biofuels Farming Computer Game_8006973357_l.jpg",
-        "Biofuels Farming Computer Game_8006978048_l.jpg"
+        "Biofuels Farming Computer Game_8006978048_l.jpg",
+        "IMG_0161.jpg",
+        "IMG_3355-RGB.jpg",
+        "IMG_9358.jpg",
+        "IMG_9457.jpg",
+        "Research Experience for Teachers 2010_4795975299_l.jpg",
+        "Research Experience for Teachers 2010_4820700103_l.jpg",
+        "Rhonda and Students Examine Plates_4904856114_l.jpg",
+        "Streaking onto CMC plates_4904855910_l.jpg",
+        "Tea-Time-080113-Web.jpg",
+        "Teacher Outreach_4904857114_l.jpg",
+        "deLeon_4_w.jpg"
     ],
-    "bottomright": []
+    "topright": [
+        ".DS_Store"
+    ],
+    "bottomright": [
+        "20080714kbs_ks0730-1_3510846162_l.jpg",
+        "Arlington_8589670361_l.jpg",
+        "BIE Lab Tours_7796880072_l.jpg",
+        "Bioenergy FIG Course_5204168269_l.jpg",
+        "Brian Pfleger_6726225519_l.jpg",
+        "Currie_0509-2309_3675486302_l.jpg",
+        "Doing Science_8265674204_l.jpg",
+        "G8_04feb10_e_4360168624_l.jpg",
+        "GLBRC_Labs_-5492_3510838324_l_7197217178_l.jpg",
+        "IMG_2168-web.jpg",
+        "IMG_2193-web.jpg",
+        "IMG_2265-web.jpg",
+        "IMG_2619.jpg",
+        "IMG_2644.jpg",
+        "Identifying Stress-Tolerant Yeast Strains_4853340977_l.jpg",
+        "Jim-Dumesic-Lab-4.jpg",
+        "KBS_3510207211_l.jpg",
+        "KBS_3510207949_l.jpg",
+        "KBS_3510209325_l.jpg",
+        "KBS_3510209913_l.jpg",
+        "KBS_3510846740_l.jpg",
+        "KBS_3511021018_l.jpg",
+        "Miscanthus_3798362183_l.jpg",
+        "Native Grass Mix_4926420273_l.jpg",
+        "Poplar Plot - Arlington Agricultural Research Station_5955533196_l.jpg",
+        "Poplar_w.jpg",
+        "Research Experience for Teachers 2010_4821318470_l.jpg",
+        "Research Experience for Teachers 2010_4821318844_l.jpg",
+        "Sanford_2_w.jpg",
+        "Switchgrass, Corn and Poplar - Arlington Agricultural Research Station_5955529982_l.jpg",
+        "Switchgrass_4926420517_l.jpg",
+        "Untitled_4927061266_l.jpg",
+        "Untitled_4927061528_l.jpg",
+        "West Madison Agricultural Research Station_3769039059_l.jpg",
+        "West Madison Agricultural Research Station_3769828434_l.jpg",
+        "agrecol-41-4382_4304143723_l.jpg",
+        "agrecol-5-4238_4304142883_l.jpg",
+        "blackbird_prairie_w.jpg",
+        "feild_shots-26-4060_4304149605_l.jpg",
+        "plant analysis_fig 2012 arlington.jpg",
+        "stacks of petri dishes_currie lab 1 - Photo by John_5981827166_l.jpg"
+    ]
 }

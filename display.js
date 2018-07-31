@@ -4,13 +4,11 @@ const app = express();
 var http = require('http');
 var fs = require('fs');
 
-
 function saveData() {
-
   fs.writeFile('spData.json', spg.getSharePointData(), function (err) {
     if (err) throw err;
   });
-myfiles = {}
+  myfiles = {}
   myfiles.topleft = fs.readdirSync('./images/topleft');
   myfiles.bottomleft = fs.readdirSync('./images/bottomleft');
   myfiles.topright = fs.readdirSync('./images/topright');
@@ -19,14 +17,13 @@ myfiles = {}
   fs.writeFile('images.json', JSON.stringify(myfiles, null, 4), function (err) {
     if (err) throw err;
   });
-  console.log('New data saved!');
+  console.log(myfiles);
 }
- saveData();
-
+//initial save
+saveData();
 setInterval(function(){
   saveData();
-
-}, 10000);
+}, 3600000);
 
 
 
