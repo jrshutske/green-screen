@@ -19,6 +19,7 @@ body {
   padding: 10px;
   justify-content: ;
   margin: -10px;
+
 }
 div > div {
   border: 1px solid rgba(237, 0, 0, .8);
@@ -27,8 +28,7 @@ div > div {
 
 }
 #employees {
-  display: flex;
-word-wrap: normal;
+
   grid-column: 2;
   grid-row: 1 / 3;
   position: relative;
@@ -38,18 +38,25 @@ word-wrap: normal;
 }
 .footer {
   height:5vh;
-grid-column: 1 / 4;
+  grid-column: 1 / 4;
 }
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
-  font-size: 1.5em;
+  font-size: 1em;
+
 }
-#employees > table {
+#th {
+  width: 100%;
+}
+#thoffice {
+  float: right;
+}
+#employees > #table {
   display: none;
   position: absolute;
-  top: 10px;
+  top: 50px;
   left: 10px;
   right: 10px;
   bottom: 10px;
@@ -57,14 +64,20 @@ grid-column: 1 / 4;
   height: 90%;
 
 }
-img {
-    max-width: 100%;
-    max-height: 100%;
+.imgs > div {
+  display: none;
+  position: absolute;
+  max-width: 450px;
+  max-height: 300px;
+}
+.imgs img , #employees{
+
+  width: 450px;
+  max-height: 100%;
+  object-fit:contain;
 }
 
-.imgs {
-    width: auto;
-}
+
 td {
   float: left;
 
