@@ -32,37 +32,6 @@ module.exports = {
             myJson[empkey].name = empval;
             myJson[empkey].office = offval;
         }
-        console.log(JSON.stringify(myJson, null, 4));
-        // myJson = {};
-        // for (var k = 1; k < resultsArray.length; k++) {
-        //     headkey = "employee" + k.toString();
-        //     console.log(headkey)
-        //     var empkey = "employee";
-        //     var offkey = "office";
-        //     var empval = resultsArray[k].title._text;;
-        //     var offval = resultsArray[k].description._cdata;
-        //     console.log(empkey)
-        //     //myJson.headkey.empkey = empval;
-        //     //myJson.headkey.offkey = offval;
-        // }
-
-
         return JSON.stringify(myJson, null, 4);
       }
      }
-
-    //loop through employees
-    // for (var i = 0; i < resultsArray.length; i++) {
-    //     officeNumber = parseNum(resultsArray[i].description._cdata);
-    //     employeeName = resultsArray[i].title._text;
-    //     if (isNaN(officeNumber)){officeNumber = ""}
-    //     officeNumber = officeNumber.toString()
-    //     var regexp = (/[0-9]{4}/g);
-    //     var matches_array = officeNumber.match(regexp);
-    //     if (matches_array){officeNumber = matches_array.pop()}
-    //     if (!officeNumber){officeNumber = ""}
-    //     if (i == 0){finalResults = ("<table>\n")}
-    //     if (i % 10 == 0 && i != 0){finalResults += ("</table>\n<table>\n")}
-    //     finalResults += ("<tr><td>" + employeeName + "</td>" + "<td>" + officeNumber + "</td></tr>\n");
-    //     if (i + 1 == resultsArray.length){finalResults += ("</table>")}
-    // }

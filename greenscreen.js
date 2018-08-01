@@ -1,45 +1,36 @@
 $(document).ready(function(){
 
+
+
   setInterval(myImageTimer, 100000);
   myImageTimer();
   function myImageTimer() {
+
     $("img").remove();
     $.getJSON("images.json", function(images) {
+        tlLength = Object.keys(images.topleft).length;
        trLength = Object.keys(images.topright).length;
        brLength = Object.keys(images.bottomright).length;
        blLength = Object.keys(images.bottomleft).length;
+
+
        setInterval(function() {
-         $('#topright > img:first')
-           .fadeOut(0)
+         $('#topright > div:first')
+           .fadeOut(2000)
            .next()
-           .fadeIn(2000)
+           .fadeIn(1000)
            .end()
            .appendTo('#topright');
        }, 5000);
        for (var r = 1; r < trLength; r++) {
          var trimg = document.createElement('img');
+         var trdiv = document.createElement('div');
+         trdiv.id = "trdiv" + r
          trimg.src = '/images/topright/' + images.topright[r];
-         document.getElementById('topright').appendChild(trimg);
+         document.getElementById('topright').appendChild(trdiv);
+         document.getElementById('trdiv' + r).appendChild(trimg);
        }
-       $("#topright > img:gt(0)").hide();
-
-       setInterval(function() {
-         $('#bottomright > div:first')
-           .fadeOut(2000)
-           .next()
-           .fadeIn(1000)
-           .end()
-           .appendTo('#bottomright');
-       }, 5000);
-       for (var r = 1; r < brLength; r++) {
-         var brimg = document.createElement('img');
-         var brdiv = document.createElement('div');
-         brdiv.id = "brdiv" + r
-         brimg.src = '/images/bottomright/' + images.bottomright[r];
-         document.getElementById('bottomright').appendChild(brdiv);
-         document.getElementById('brdiv' + r).appendChild(brimg);
-       }
-       $("#bottomright > div:gt(0)").hide();
+       $("#topright > div:gt(0)").hide();
 
        setInterval(function() {
          $('#bottomleft > div:first')
@@ -49,7 +40,7 @@ $(document).ready(function(){
            .end()
            .appendTo('#bottomleft');
        }, 5000);
-       for (var l = 1; l < brLength; l++) {
+       for (var l = 1; l < blLength; l++) {
          var blimg = document.createElement('img');
          var bldiv = document.createElement('div');
          bldiv.id = "bldiv" + l
@@ -58,6 +49,14 @@ $(document).ready(function(){
          document.getElementById('bldiv' + l).appendChild(blimg);
        }
        $("#bottomleft > div:gt(0)").hide();
+
+         var tlsource = document.createElement('source');
+         tlsource.src = '/images/topleft/' + images.topleft[1];
+         document.getElementById('myvideo').appendChild(tlsource);
+         tlsource.type = "video/mp4"
+
+
+
 
     });
   }
@@ -81,8 +80,6 @@ function myTimer() {
   $.getJSON("spData.json", function(json) {
 
     var empLength = Object.keys(json).length;
-
-
 
           var table = document.createElement('table');
           table.setAttribute("id", "table");

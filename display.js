@@ -17,13 +17,13 @@ function saveData() {
   fs.writeFile('images.json', JSON.stringify(myfiles, null, 4), function (err) {
     if (err) throw err;
   });
-  console.log(myfiles);
+  console.log("New Data Saved");
 }
 //initial save
 saveData();
 setInterval(function(){
   saveData();
-}, 10000);
+}, 7200000);
 
 
 
