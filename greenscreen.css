@@ -7,6 +7,9 @@
 body {
   background-image: url("./images/template/UW_Gradient_1920x1080.png"), url("./images/template/WEI-Building-1.jpg");
   background-size: cover;
+  width:100vw;
+  height:100vh;
+  box-sizing: border-box;
 }
 .grid-container {
   display: grid;
@@ -14,21 +17,13 @@ body {
     'topleft names topright'
     'bottomleft names bottomright'
     'footer footer footer';
-  grid-gap: 10px;
+  grid-gap: 5px;
   opacity: .9;
-  padding: 10px;
-  justify-content: ;
+  padding: 5px;
+  justify-content: center;
   margin: -10px;
-
-}
-div > div {
-  border: 1px solid rgba(237, 0, 0, .8);
-    border-width: 3px;
-    border-radius: .5em;
-
 }
 #employees {
-
   grid-column: 2;
   grid-row: 1 / 3;
   position: relative;
@@ -41,15 +36,20 @@ div > div {
   grid-column: 1 / 4;
 }
 .grid-container > div {
+  box-sizing: border-box;
+  border: 1px solid rgba(237, 0, 0, .8);
+    border-width: 3px;
+    border-radius: .5em;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 1em;
 
 }
 #th {
   width: 100%;
 }
+#thname {float: left;}
 #thoffice {
   float: right;
 }
@@ -64,16 +64,30 @@ div > div {
   height: 90%;
 
 }
-.imgs > div {
-  display: none;
-  position: absolute;
-  max-width: 450px;
-  max-height: 300px;
-}
-.imgs img , #employees{
+.imgs {
+  position: relative;
+  width: 500px;
+  height: 40vh;
 
-  width: 450px;
+}
+.imgs > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+div img{
+  border-radius: .5em;
+  overflow: hidden;
+  max-width: 100%;
   max-height: 100%;
+  object-fit:contain;
+}
+#employees {
+  overflow: hidden;
+  width: 25vw;
+  height: 80vh;
   object-fit:contain;
 }
 
