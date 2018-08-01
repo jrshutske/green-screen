@@ -1,60 +1,66 @@
 $(document).ready(function(){
 
+  setInterval(myImageTimer, 100000);
+  myImageTimer();
+  function myImageTimer() {
+    $("img").remove();
+    $.getJSON("images.json", function(images) {
+       trLength = Object.keys(images.topright).length;
+       brLength = Object.keys(images.bottomright).length;
+       blLength = Object.keys(images.bottomleft).length;
+       setInterval(function() {
+         $('#topright > img:first')
+           .fadeOut(0)
+           .next()
+           .fadeIn(2000)
+           .end()
+           .appendTo('#topright');
+       }, 5000);
+       for (var r = 1; r < trLength; r++) {
+         var trimg = document.createElement('img');
+         trimg.src = '/images/topright/' + images.topright[r];
+         document.getElementById('topright').appendChild(trimg);
+       }
+       $("#topright > img:gt(0)").hide();
 
-  $.getJSON("images.json", function(images) {
-     trLength = Object.keys(images.topright).length;
-     brLength = Object.keys(images.bottomright).length;
-     blLength = Object.keys(images.bottomleft).length;
-     setInterval(function() {
-       $('#topright > img:first')
-         .fadeOut(0)
-         .next()
-         .fadeIn(2000)
-         .end()
-         .appendTo('#topright');
-     }, 5000);
-     for (var r = 1; r < trLength; r++) {
-       var trimg = document.createElement('img');
-       trimg.src = '/images/topright/' + images.topright[r];
-       document.getElementById('topright').appendChild(trimg);
-     }
-     $("#topright > img:gt(0)").hide();
+       setInterval(function() {
+         $('#bottomright > div:first')
+           .fadeOut(2000)
+           .next()
+           .fadeIn(1000)
+           .end()
+           .appendTo('#bottomright');
+       }, 5000);
+       for (var r = 1; r < brLength; r++) {
+         var brimg = document.createElement('img');
+         var brdiv = document.createElement('div');
+         brdiv.id = "brdiv" + r
+         brimg.src = '/images/bottomright/' + images.bottomright[r];
+         document.getElementById('bottomright').appendChild(brdiv);
+         document.getElementById('brdiv' + r).appendChild(brimg);
+       }
+       $("#bottomright > div:gt(0)").hide();
 
-     setInterval(function() {
-       $('#bottomright > img:first')
-         .fadeOut(0)
-         .next()
-         .fadeIn(1000)
-         .end()
-         .appendTo('#bottomright');
-     }, 5000);
-     for (var r = 1; r < brLength; r++) {
-       var brimg = document.createElement('img');
-       brimg.src = '/images/bottomright/' + images.bottomright[r];
-       document.getElementById('bottomright').appendChild(brimg);
-     }
-     $("#bottomright > img:gt(0)").hide();
+       setInterval(function() {
+         $('#bottomleft > div:first')
+           .fadeOut(2000)
+           .next()
+           .fadeIn(1000)
+           .end()
+           .appendTo('#bottomleft');
+       }, 5000);
+       for (var l = 1; l < brLength; l++) {
+         var blimg = document.createElement('img');
+         var bldiv = document.createElement('div');
+         bldiv.id = "bldiv" + l
+         blimg.src = '/images/bottomleft/' + images.bottomleft[l];
+         document.getElementById('bottomleft').appendChild(bldiv);
+         document.getElementById('bldiv' + l).appendChild(blimg);
+       }
+       $("#bottomleft > div:gt(0)").hide();
 
-     setInterval(function() {
-       $('#bottomleft > img:first')
-         .fadeOut(0)
-         .next()
-         .fadeIn(1000)
-         .end()
-         .appendTo('#bottomleft');
-     }, 5000);
-     for (var l= 1; l < blLength; l++) {
-       var blimg = document.createElement('img');
-       blimg.src = '/images/bottomleft/' + images.bottomleft[l];
-       document.getElementById('bottomleft').appendChild(blimg);
-     }
-     $("#bottomleft > img:gt(0)").hide();
-
-
-
-
-
-  });
+    });
+  }
 
 
 
@@ -67,7 +73,7 @@ setInterval(function() {
     .appendTo('#employees');
 },  5000);
 })
-var myVar = setInterval(myTimer, 100000);
+setInterval(myTimer, 100000);
 myTimer();
 function myTimer() {
   $("table").remove();
@@ -76,9 +82,7 @@ function myTimer() {
 
     var empLength = Object.keys(json).length;
 
-    $(document).ready(function () {
-    $.getJSON("spData.json",
-      function (json) {
+
 
           var table = document.createElement('table');
           table.setAttribute("id", "table");
@@ -118,8 +122,6 @@ function myTimer() {
 
             }
           }
-          }
-      });
-    });
+    };
   });
 }

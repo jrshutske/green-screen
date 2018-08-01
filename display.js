@@ -23,7 +23,7 @@ function saveData() {
 saveData();
 setInterval(function(){
   saveData();
-}, 3600000);
+}, 10000);
 
 
 
