@@ -1,7 +1,7 @@
 {
     "topleft": [
-        "Energy Summit Video Final-20161010.mp4",
-        "wei-s_60fps_4ph_10pd_noon.avi"
+        ".DS_Store",
+        "Energy Summit Video Final-20161010.mp4"
     ],
     "bottomleft": [
         ".DS_Store",
@@ -28,8 +28,8 @@
         "Teacher Outreach_4904857114_l.jpg",
         "deLeon_4_w.jpg"
     ],
-    "topright": [],
-    "bottomright": [
+    "topright": [
+        ".DS_Store",
         "20080714kbs_ks0730-1_3510846162_l.jpg",
         "Arlington_8589670361_l.jpg",
         "BIE Lab Tours_7796880072_l.jpg",
@@ -71,5 +71,9 @@
         "feild_shots-26-4060_4304149605_l.jpg",
         "plant analysis_fig 2012 arlington.jpg",
         "stacks of petri dishes_currie lab 1 - Photo by John_5981827166_l.jpg"
+    ],
+    "bottomright": [
+        ".DS_Store",
+        "weinoon.avi"
     ]
 }
