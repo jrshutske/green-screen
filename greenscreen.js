@@ -54,24 +54,24 @@ $(document).ready(function(){
   }
 
   setInterval(function() {
-    $('#employees > #table:first')
+    $('#employees > #emptable:first')
       .fadeOut(1000)
       .next()
-      .fadeIn(3000)
+      .fadeIn(2000)
       .end()
       .appendTo('#employees');
-  },  7000);
+  },  5500);
 })
 setInterval(myTimer, 100000);
 myTimer();
 function myTimer() {
-  $("table").remove();
+  $("emptable").remove();
 
   $.getJSON("spData.json", function(json) {
 
           var empLength = Object.keys(json).length;
           var table = document.createElement('table');
-          table.setAttribute("id", "table");
+          table.setAttribute("id", "emptable");
 
           for (var k = 1; k < empLength + 1; k++) {
             var tableId = 1;
@@ -96,7 +96,7 @@ function myTimer() {
             if(k % 20 === 0 || k === empLength) {
               var newTables = document.getElementById("employees").appendChild(table);
               var table = document.createElement('table');
-              table.setAttribute("id", "table");
+              table.setAttribute("id", "emptable");
             }
         }
     }

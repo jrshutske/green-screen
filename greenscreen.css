@@ -54,7 +54,7 @@ body {
 #thoffice {
   float: right;
 }
-#employees > #table {
+#employees > #emptable {
   display: none;
   position: absolute;
   top: 50px;
