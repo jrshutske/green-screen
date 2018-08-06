@@ -11,9 +11,9 @@ $(document).ready(function(){
       blLength = Object.keys(images.bottomleft).length;
       setInterval(function() {
         $('#topright > div:first')
-        .fadeOut(2000)
+        .fadeOut(1000)
         .next()
-        .fadeIn(3500)
+        .fadeIn(2000)
         .end()
         .appendTo('#topright');
        }, 7000);
