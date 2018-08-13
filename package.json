@@ -9,6 +9,7 @@
   "author": "Jack Shutske",
   "license": "ISC",
   "dependencies": {
+    "http-server":"0.11.1",
     "fast-xml-parser": "^3.11.1",
     "httpntlm": "^1.7.6",
     "parse-num": "^1.0.0",
