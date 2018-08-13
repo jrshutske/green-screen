@@ -1,6 +1,4 @@
 const getData = require('./getData');
-const express = require('express')
-const app = express();
 var http = require('http');
 var fs = require('fs');
 
@@ -13,10 +11,10 @@ function saveData() {
   });
   //Reading the file system and creating JSON file with all of the filepaths to images
   myfiles = {}
-  myfiles.topleft = fs.readdirSync('./images/topleft');
-  myfiles.bottomleft = fs.readdirSync('./images/bottomleft');
-  myfiles.topright = fs.readdirSync('./images/topright');
-  myfiles.bottomright =fs.readdirSync('./images/bottomright');
+  myfiles.topleft = fs.readdirSync('./public/images/topleft');
+  myfiles.bottomleft = fs.readdirSync('./public/images/bottomleft');
+  myfiles.topright = fs.readdirSync('./public/images/topright');
+  myfiles.bottomright =fs.readdirSync('./public/images/bottomright');
 
   fs.writeFile('images.json', JSON.stringify(myfiles, null, 4), function (err) {
     if (err) throw err;

@@ -5,6 +5,7 @@ Setup
 - add video to `./public/images/topleft`
 - add video to `./public/images/bottomright`
 - run `npm install`
-- run `node display` (run this in background)
+- connect to `smb://file.glbrc.org/shared`
+- run `node saveData` (run this in background indefinetly)
 - run `http-server -c-1`
 - navigate to `./public/index.html`
