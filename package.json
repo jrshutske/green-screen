@@ -4,18 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "npm install": "npm i -g http-server"
-
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "create-react-app": "^1.5.2",
-    "express": "^4.16.3",
     "fast-xml-parser": "^3.11.1",
-    "httpntlm": "^1.7.6",
-    "node-sharepoint-rest": "0.0.9",
     "parse-num": "^1.0.0",
     "shelljs": "^0.8.2",
     "xml-js": "^1.6.7",
@@ -23,6 +17,5 @@
     "xml-parse-from-string": "^1.0.1",
     "xml2js": "^0.4.19",
     "xmlhttprequest": "^1.8.0"
-  },
-
+  }
 }

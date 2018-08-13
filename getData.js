@@ -46,7 +46,6 @@ module.exports = {
           for (var t = 0; t < Object.keys(resultsArray2).length; t++) {
             var eventkey = "event" + t;
             myJson2[eventkey] = {}
-            console.log(Object.keys(resultsArray2))
             if (Object.keys(resultsArray2).length == 6 && Object.keys(resultsArray2)[1] == 'link') {
               var eventval = resultsArray2.title;
               var  dateval = resultsArray2.pubDate;
