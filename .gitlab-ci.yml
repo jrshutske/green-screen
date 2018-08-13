@@ -1,0 +1,12 @@
+image: node:10.4.0
+
+stages:
+  - test
+
+test_nodejs:
+  stage: test
+  script:
+  ## NODEJS APP CMDS
+  - npm install --only=production
+  #- npm install http-server -g ## skip this in CI and instead add to host requirements; it requires you to CTRL-C out or the ci job runs forever
+  
