@@ -1,6 +1,18 @@
 {
     "event0": {
-        "name": "From public to policy: communicating science effectively to diverse audiences",
-        "date": "August 21, 2018 – 9:00 AM"
+        "name": {
+            "_text": "From Cutting Edge to Mainstream: How attitudes, biases and policies impact cleantech adoption"
+        },
+        "date": {
+            "_text": "August 8, 2018 – 4:00 PM"
+        }
+    },
+    "event1": {
+        "name": {
+            "_text": "From public to policy: communicating science effectively to diverse audiences"
+        },
+        "date": {
+            "_text": "August 21, 2018 – 9:00 AM"
+        }
     }
 }

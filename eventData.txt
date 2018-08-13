@@ -7,6 +7,18 @@
     <language>en</language>
     
     <item>
+  <title>From Cutting Edge to Mainstream: How attitudes, biases and policies impact cleantech adoption</title>
+  <link>https://energy.wisc.edu/events/cutting-edge-mainstream-how-attitudes-biases-and-policies-impact-cleantech-adoption</link>
+  <description>Alex Frank, an independent consultant, will moderate a discussion with panelists Kathy Kuntz of Cool Choices; Dietram Scheufele, life sciences communication at UW–Madison and Morgridge Institute for Research; and Tyler Huebner, RENEW Wisconsin.
+
+ 
+
+This event will be followed by an informal networking reception.</description>
+  <pubDate>August 8, 2018 – 4:00 PM</pubDate>
+    <dc:creator>kchukel</dc:creator>
+    <guid isPermaLink="false">6ccc7d21-3f13-4e29-818a-f585635f7844</guid>
+    </item>
+<item>
   <title>From public to policy: communicating science effectively to diverse audiences</title>
   <link>https://energy.wisc.edu/events/public-policy-communicating-science-effectively-diverse-audiences</link>
   <description/>
