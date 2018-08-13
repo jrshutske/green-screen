@@ -76,7 +76,8 @@ function myTimer() {
           for (var k = 1; k < empLength + 1; k++) {
             var tableId = 1;
             empString = "employee"  + k.toString();
-            var officeNumber = json[empString].office
+            console.log(json[empString].office);
+            var officeNumber = json[empString].office;
             if (!officeNumber){officeNumber = ""}
             var matches_array = officeNumber.match(/[0-9]{4}/g)
             if (matches_array){officeNumber = matches_array.pop()}
