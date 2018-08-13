@@ -41,18 +41,26 @@ module.exports = {
 
         let resultsArray2 = resultsParsed2.rss.channel.item;
 
-
         myJson2 = {}
 
           for (var t = 0; t < Object.keys(resultsArray2).length; t++) {
             var eventkey = "event" + t;
             myJson2[eventkey] = {}
-            //console.log(resultsArray2)
-
-              var eventval = resultsArray2[t].title;
-              var  dateval = resultsArray2[t].pubDate;
+            console.log(Object.keys(resultsArray2))
+            if (Object.keys(resultsArray2).length == 6 && Object.keys(resultsArray2)[1] == 'link') {
+              var eventval = resultsArray2.title;
+              var  dateval = resultsArray2.pubDate;
               myJson2[eventkey].name = eventval;
               myJson2[eventkey].date = dateval;
+              break;
+              }
+              else {
+                var eventval = resultsArray2[t].title;
+                var  dateval = resultsArray2[t].pubDate;
+                  myJson2[eventkey].name = eventval;
+                  myJson2[eventkey].date = dateval;
+              }
+
           }
 
         return {
