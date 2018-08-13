@@ -1,3 +1,5 @@
+a nodejs app to display helpful information in the WEI/GLBRC first floor green screens
+
 Setup
 - Clone Repo
 - add images to `./public/images/topright`
