@@ -1,7 +1,4 @@
-# deployment request
-
-#### webapp
- - green-screen
+# deployment request :: green-screen
 
 #### release
  - tag: TAG_URL
