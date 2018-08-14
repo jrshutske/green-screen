@@ -5,7 +5,7 @@
  - ci pipeline: CI_PASSING_URL
 
 #### host_requirements
- - https://gitlab.wei.wisc.edu/compbio/green-screen/wikis/host-requirements
+ - https://gitlab.wei.wisc.edu/infoserv/green-screen/wikis/host-requirements
 
 ## deploy process
 
