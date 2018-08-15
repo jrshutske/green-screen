@@ -6,8 +6,8 @@ const fs = require('fs');
 module.exports = {
 
   getSharePointData: function() {
-    shell.exec("curl --anyauth --user user:password 'https://intranet.wei.wisc.edu/toolsportal/people/_layouts/15/listfeed.aspx?List=bef8adc8-42f3-4eef-92eb-d5424e185da7&View=9a9091f8-3b80-4f21-a7da-541ba8bc97b0' > /Users/jackshutske/Documents/git/green-screen/spData.txt")
-    shell.exec("curl --anyauth --user user:password 'https://energy.wisc.edu/events/feed' > /Users/jackshutske/Documents/git/green-screen/eventData.txt")
+    shell.exec("curl --anyauth --user user:password 'https://intranet.wei.wisc.edu/toolsportal/people/_layouts/15/listfeed.aspx?List=bef8adc8-42f3-4eef-92eb-d5424e185da7&View=9a9091f8-3b80-4f21-a7da-541ba8bc97b0' > ./spData.txt")
+    shell.exec("curl --anyauth --user user:password 'https://energy.wisc.edu/events/feed' > ./eventData.txt")
 
     require.extensions['.txt'] = function (module, filename) {
         module.exports = fs.readFileSync(filename, 'utf8');
