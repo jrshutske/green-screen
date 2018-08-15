@@ -65,24 +65,25 @@ $(document).ready(function(){
 setInterval(myTimer, 100000);
 myTimer();
 function myTimer() {
-  $("emptable").remove();
 
   $.getJSON("spData.json", function(json) {
 
           var empLength = Object.keys(json).length;
           var table = document.createElement('table');
           table.setAttribute("id", "emptable");
-
-          for (var k = 1; k < empLength + 1; k++) {
+console.log(empLength)
+          for (var k = 0; k < empLength; k++) {
             var tableId = 1;
             empString = "employee"  + k.toString();
-            console.log(json[empString].office);
-            var officeNumber = json[empString].office;
+
+            var officeNumber = json[empString].office
             if (!officeNumber){officeNumber = ""}
             var matches_array = officeNumber.match(/[0-9]{4}/g)
             if (matches_array){officeNumber = matches_array.pop()}
             if (isNaN(officeNumber)){officeNumber = ""}
-            if (officeNumber) {
+            employeeName = json[empString].name
+
+
             var tr = document.createElement('tr');
             var td1 = document.createElement('td');
             var td2 = document.createElement('td');
@@ -94,12 +95,13 @@ function myTimer() {
             tr.appendChild(td1);
             tr.appendChild(td2);
             table.appendChild(tr);
-            if(k % 20 === 0 || k === empLength) {
-              var newTables = document.getElementById("employees").appendChild(table);
+            if(k !== 0 && k % 20 === 0 || k + 1 === empLength) {
+              document.getElementById("employees").appendChild(table);
               var table = document.createElement('table');
               table.setAttribute("id", "emptable");
+
             }
-        }
+            console.log(k)
     }
   })
 }
