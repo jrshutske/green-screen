@@ -4,6 +4,10 @@
 .item4 { grid-area: bottomleft; }
 .item5 { grid-area: bottomright; }
 .item6 { grid-area: footer; }
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
 body {
   background-image: url("./images/template/UW_Gradient_1920x1080.png"), url("./images/template/WEI-Building-1.jpg");
   background-size: cover;
@@ -66,6 +70,29 @@ body {
   width: 95%;
   height: 90%;
 
+}
+#events > #eventdiv {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  width: 95%;
+  height: 90%;
+
+}
+#eventdiv1 {
+  margin-top: 2em;
+  font-size: 150%;
+  display: block;
+}
+#eventdiv {
+  margin-top: 2em;
+  font-size: 150%;
+}
+#eventtext {
+  text-align: center;
 }
 .imgs {
   position: relative;

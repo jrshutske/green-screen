@@ -61,7 +61,7 @@ $(document).ready(function(){
       .end()
       .appendTo('#employees');
   },  5500);
-})
+
 setInterval(myTimer, 100000);
 myTimer();
 function myTimer() {
@@ -71,7 +71,7 @@ function myTimer() {
           var empLength = Object.keys(json).length;
           var table = document.createElement('table');
           table.setAttribute("id", "emptable");
-console.log(empLength)
+
           for (var k = 0; k < empLength; k++) {
             var tableId = 1;
             empString = "employee"  + k.toString();
@@ -88,7 +88,7 @@ console.log(empLength)
             var td1 = document.createElement('td');
             var td2 = document.createElement('td');
             $(td2).attr("id","office");
-            var empName = document.createTextNode(json[empString].name);
+            var empName = document.createTextNode(employeeName);
             var empOffice = document.createTextNode(officeNumber);
             td1.appendChild(empName);
             td2.appendChild(empOffice);
@@ -101,7 +101,64 @@ console.log(empLength)
               table.setAttribute("id", "emptable");
 
             }
-            console.log(k)
+
     }
   })
 }
+
+
+//////////
+
+
+
+setInterval(function() {
+
+  $('#events > #eventdiv:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#events');
+},  5500);
+setInterval(myTimer2, 100000);
+myTimer2();
+function myTimer2() {
+
+$.getJSON("eventData.json", function(eventjson) {
+
+        var eventLength = Object.keys(eventjson).length;
+        var div = document.createElement('div');
+        div.setAttribute("id", "eventdiv");
+
+        for (var e = 0; e < eventLength; e++) {
+          if (eventLength == 1)
+          {div.setAttribute("id", "eventdiv1");}
+          var divId = 1;
+          eventString = "event"  + e.toString();
+
+          var eventName = eventjson[eventString].name._text
+
+          var eventDate = eventjson[eventString].date._text
+
+
+          var p1 = document.createElement('p');
+          var p2 = document.createElement('p');
+
+          var eventName = document.createTextNode(eventName);
+          var eventDate = document.createTextNode(eventDate);
+          p1.appendChild(eventName);
+          p2.appendChild(eventDate);
+          $(p1).attr("id","eventtext");
+          $(p2).attr("id","eventtext");
+
+          div.appendChild(p1);
+          div.appendChild(p2);
+
+            document.getElementById("events").appendChild(div);
+            var div = document.createElement('div');
+            div.setAttribute("id", "eventdiv");
+
+        }
+})
+}
+})
