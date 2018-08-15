@@ -8,7 +8,7 @@ module.exports = {
   getSharePointData: function() {
     shell.exec("curl --anyauth --user user:password 'https://intranet.wei.wisc.edu/toolsportal/people/_layouts/15/listfeed.aspx?List=bef8adc8-42f3-4eef-92eb-d5424e185da7&View=9a9091f8-3b80-4f21-a7da-541ba8bc97b0' > /Users/jackshutske/Documents/git/green-screen/spData.txt")
     shell.exec("curl --anyauth --user user:password 'https://energy.wisc.edu/events/feed' > /Users/jackshutske/Documents/git/green-screen/eventData.txt")
-https://energy.wisc.edu/events/feed
+
     require.extensions['.txt'] = function (module, filename) {
         module.exports = fs.readFileSync(filename, 'utf8');
     };
@@ -37,20 +37,29 @@ https://energy.wisc.edu/events/feed
         var xml2 = require("./eventData.txt")
         var results2 = convert.xml2json(xml2, {compact: true, spaces: 2});
         let resultsParsed2 = JSON.parse(results2);
-        let resultsArray2 = [resultsParsed2.rss.channel.item];
 
+
+        let resultsArray2 = resultsParsed2.rss.channel.item;
 
         myJson2 = {}
-
 
           for (var t = 0; t < Object.keys(resultsArray2).length; t++) {
             var eventkey = "event" + t;
             myJson2[eventkey] = {}
-
-              var eventval = resultsArray2[t].title._text;
-              var  dateval = resultsArray2[t].pubDate._text;
+            if (Object.keys(resultsArray2).length == 6 && Object.keys(resultsArray2)[1] == 'link') {
+              var eventval = resultsArray2.title;
+              var  dateval = resultsArray2.pubDate;
               myJson2[eventkey].name = eventval;
               myJson2[eventkey].date = dateval;
+              break;
+              }
+              else {
+                var eventval = resultsArray2[t].title;
+                var  dateval = resultsArray2[t].pubDate;
+                  myJson2[eventkey].name = eventval;
+                  myJson2[eventkey].date = dateval;
+              }
+
           }
 
         return {
