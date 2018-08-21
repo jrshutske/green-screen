@@ -1,4 +1,14 @@
-node_modules
-images
+## .gitignore
+
+# nodejs -- installed local modules
+node_modules/
+
+# greenscreen -- files that shouldn't be stored in gitlab
+public/images/
+
+# OS junk
 .DS_Store
-*/DS_Store
+[Tt]humbs.db
+
+# temp files
+.*.swp
