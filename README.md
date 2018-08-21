@@ -1,1 +1,1 @@
-a nodejs app to display helpful information in the WEI/GLBRC first floor green screens
+An HTML, CSS, and NodeJS app to display directory information and news on the WEI/GLBRC first floor green screens.
