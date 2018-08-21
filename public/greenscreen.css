@@ -5,7 +5,8 @@
 .item5 { grid-area: bottomright; }
 .item6 { grid-area: footer; }
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
 
 }
 body {
@@ -41,7 +42,7 @@ body {
 }
 .grid-container > div {
   box-sizing: border-box;
-  border: 1px solid rgba(237, 0, 0, .8);
+  border: 1px solid #BD2031;;
     border-width: 3px;
     border-radius: .5em;
   background-color: rgba(255, 255, 255, 0.8);
@@ -53,6 +54,7 @@ body {
 }
 #th {
   width: 100%;
+  color: #BD2031;
 }
 #thname {
   float: left;
@@ -61,20 +63,23 @@ body {
   float: right;
 }
 #employees > #emptable {
+  margin-top: 20%;
   display: none;
   position: absolute;
-  top: 50px;
   left: 10px;
   right: 10px;
   bottom: 10px;
   width: 95%;
-  height: 90%;
+  height: 92%;
 
+}
+#eventshead {
+  color: #BD2031;
 }
 #events > #eventdiv {
   display: none;
   position: absolute;
-  top: 50px;
+
   left: 10px;
   right: 10px;
   bottom: 10px;
@@ -83,14 +88,11 @@ body {
 
 }
 #eventdiv1 {
-  margin-top: 2em;
+  margin-top: 10%;
   font-size: 150%;
   display: block;
 }
-#eventdiv {
-  margin-top: 2em;
-  font-size: 150%;
-}
+
 #eventtext {
   text-align: center;
 }
