@@ -5,7 +5,7 @@
 .item5 { grid-area: bottomright; }
 .item6 { grid-area: footer; }
 * {
-    font-family: "Times New Roman", Times, serif;
+    font-family: Helvetica;
     box-sizing: border-box;
 
 }
