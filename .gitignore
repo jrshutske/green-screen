@@ -1,4 +1,9 @@
 node_modules
 images
+images.json
+eventData.txt
+eventData.json
+spData.txt
+spData.json
 .DS_Store
 */DS_Store
