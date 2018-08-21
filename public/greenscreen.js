@@ -60,7 +60,7 @@ $(document).ready(function(){
       .fadeIn(2000)
       .end()
       .appendTo('#employees');
-  },  5500);
+  },  7000);
 
 setInterval(myTimer, 100000);
 myTimer();
@@ -119,7 +119,7 @@ setInterval(function() {
     .fadeIn(2000)
     .end()
     .appendTo('#events');
-},  5500);
+},  7000);
 setInterval(myTimer2, 100000);
 myTimer2();
 function myTimer2() {
@@ -146,8 +146,8 @@ $.getJSON("eventData.json", function(eventjson) {
 
           var eventName = document.createTextNode(eventName);
           var eventDate = document.createTextNode(eventDate);
-          p1.appendChild(eventName);
-          p2.appendChild(eventDate);
+          p1.appendChild(eventDate);
+          p2.appendChild(eventName);
           $(p1).attr("id","eventtext");
           $(p2).attr("id","eventtext");
 
