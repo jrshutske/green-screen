@@ -1,6 +1,39 @@
 $(document).ready(function(){
+
+  var vid = document.getElementById("myvideo1");
+
+  function getPlaySpeed() {
+      alert(vid.playbackRate);
+  }
+
+  function setPlaySpeed() {
+      vid.playbackRate = 0.75;
+  }
+  setPlaySpeed()
+
   setInterval(myImageTimer, 100000);
   myImageTimer();
+
+    setTimeout(function(){
+      setInterval(function() {
+        $('#topright > div:first')
+        .fadeOut(2000)
+        .next()
+        .fadeIn(2000)
+        .end()
+        .appendTo('#topright');
+      }, 9000);
+    }, 4500);
+    setTimeout(function(){
+      setInterval(function() {
+        $('#bottomleft > div:first')
+          .fadeOut(2000)
+          .next()
+          .fadeIn(2000)
+          .end()
+          .appendTo('#bottomleft');
+      }, 9000);
+    }, 0000);
 
   function myImageTimer() {
     $("img").remove();
@@ -9,14 +42,7 @@ $(document).ready(function(){
       trLength = Object.keys(images.topright).length;
       brLength = Object.keys(images.bottomright).length;
       blLength = Object.keys(images.bottomleft).length;
-      setInterval(function() {
-        $('#topright > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(2000)
-        .end()
-        .appendTo('#topright');
-       }, 7000);
+
        for (var r = 1; r < trLength; r++) {
          var trimg = document.createElement('img');
          var trdiv = document.createElement('div');
@@ -27,14 +53,7 @@ $(document).ready(function(){
        }
        $("#topright > div:gt(0)").hide();
 
-       setInterval(function() {
-         $('#bottomleft > div:first')
-           .fadeOut(1000)
-           .next()
-           .fadeIn(2000)
-           .end()
-           .appendTo('#bottomleft');
-       }, 7000);
+
        for (var l = 1; l < blLength; l++) {
          var blimg = document.createElement('img');
          var bldiv = document.createElement('div');
@@ -55,12 +74,12 @@ $(document).ready(function(){
 
   setInterval(function() {
     $('#employees > #emptable:first')
-      .fadeOut(1000)
+      .fadeOut(2000)
       .next()
       .fadeIn(2000)
       .end()
       .appendTo('#employees');
-  },  7000);
+  },  11000);
 
 setInterval(myTimer, 100000);
 myTimer();
@@ -71,16 +90,19 @@ function myTimer() {
           var empLength = Object.keys(json).length;
           var table = document.createElement('table');
           table.setAttribute("id", "emptable");
-
+          let test = 0;
           for (var k = 0; k < empLength; k++) {
             var tableId = 1;
             empString = "employee"  + k.toString();
 
             var officeNumber = json[empString].office
+
             if (!officeNumber){officeNumber = ""}
             var matches_array = officeNumber.match(/[0-9]{4}/g)
             if (matches_array){officeNumber = matches_array.pop()}
             if (isNaN(officeNumber)){officeNumber = ""}
+
+            if (officeNumber == "") {continue;}
             employeeName = json[empString].name
 
 
@@ -95,14 +117,20 @@ function myTimer() {
             tr.appendChild(td1);
             tr.appendChild(td2);
             table.appendChild(tr);
-            if(k !== 0 && k % 20 === 0 || k + 1 === empLength) {
+            test++
+            console.log(empLength)
+            if(test !== 0 && test % 20 === 0) {
               document.getElementById("employees").appendChild(table);
               var table = document.createElement('table');
               table.setAttribute("id", "emptable");
 
+
             }
 
-    }
+          }
+          document.getElementById("employees").appendChild(table);
+          var table = document.createElement('table');
+          table.setAttribute("id", "emptable");
   })
 }
 
@@ -119,7 +147,7 @@ setInterval(function() {
     .fadeIn(2000)
     .end()
     .appendTo('#events');
-},  7000);
+},  12000);
 setInterval(myTimer2, 100000);
 myTimer2();
 function myTimer2() {
