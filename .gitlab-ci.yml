@@ -1,4 +1,4 @@
-image: node:10.4.0
+image: node:10.8
 
 stages:
   - test
@@ -8,5 +8,3 @@ test_nodejs:
   script:
   ## NODEJS APP CMDS
   - npm install --only=production
-  #- npm install http-server ## properly defined in wikis/host-requirements
-  
