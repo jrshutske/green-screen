@@ -2,6 +2,7 @@ const getData = require('./getData');
 var http = require('http');
 var fs = require('fs');
 
+//writes JSON strings to .json files to be read later by application
 function saveData() {
   fs.writeFile('./public/spData.json', getData.getSharePointData().employeejson, function (err) {
     if (err) throw err;
