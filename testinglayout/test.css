@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  justify-content: center;
+}
+.topleft, .topright, .bottomleft, .bottomright {
+  height: 40vh;
+}
+.names {
+  height: 82vh;
+}
+.topleft, .topright, .bottomleft, .bottomright, .names {
+  background-color: white;
+  border-width: thick;
+  border-color: black;
+  border: 1px solid #BD2031;
+    border-width: 3px;
+    border-radius: .5em;
+  background-color: rgba(255, 255, 255, .8);
+}
+.footer {
+  height: 18vh;
+}

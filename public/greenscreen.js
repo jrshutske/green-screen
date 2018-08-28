@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+
+
+
   var vid = document.getElementById("myvideo1");
 
   function getPlaySpeed() {
@@ -36,7 +39,8 @@ $(document).ready(function(){
     }, 0000);
 
   function myImageTimer() {
-    $("img").remove();
+    $("#bottomleft > div > img").remove();
+    $("#topright > div > img").remove();
     $.getJSON("images.json", function(images) {
       tlLength = Object.keys(images.topleft).length;
       trLength = Object.keys(images.topright).length;
@@ -142,7 +146,7 @@ function myTimer() {
 setInterval(function() {
 
   $('#events > #eventdiv:first')
-    .fadeOut(1000)
+    .fadeOut(2000)
     .next()
     .fadeIn(2000)
     .end()
@@ -151,7 +155,7 @@ setInterval(function() {
 setInterval(myTimer2, 100000);
 myTimer2();
 function myTimer2() {
-
+$("#events > div").remove();
 $.getJSON("eventData.json", function(eventjson) {
 
         var eventLength = Object.keys(eventjson).length;

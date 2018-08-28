@@ -1,13 +1,6 @@
-.item1 { grid-area: topleft; }
-.item2 { grid-area: names; }
-.item3 { grid-area: topright; }
-.item4 { grid-area: bottomleft; }
-.item5 { grid-area: bottomright; }
-.item6 { grid-area: footer; }
-* {
-    font-family: Helvetica;
-    box-sizing: border-box;
 
+* {
+  box-sizing: border-box;
 }
 body {
   background-image: url("./images/template/UW_Gradient_1920x1080.png"), url("./images/template/WEI-Building-1.jpg");
@@ -16,37 +9,57 @@ body {
   height:100vh;
   box-sizing: border-box;
 }
-#weather {
-  box-sizing: border-box;
+.boxes{
+  padding-right:.5%;
+  padding-left:.5%;
+}
+.room {
+
+  white-space: nowrap;
+}
+
+.row {
+  justify-content: center;
+}
+.topleft, .topright, .bottomleft, .bottomright {
+  height: 40vh;
+
+}
+.topright>div>img, .bottomleft > div  > img {
+  height: 100% !important;
+}
+
+.topleft, .topright, .bottomleft, .bottomright, .names {
+  background-color: white;
+  border-width: thick;
+  border-color: black;
   border: 1px solid #BD2031;
     border-width: 3px;
     border-radius: .5em;
   background-color: rgba(255, 255, 255, .8);
+}
+
+.footer > div {
+  padding:0;
+}
+
+#weather {
+  box-sizing: border-box;
+  border: 1px solid #BD2031;
+  border-width: thick;
+    border-width: 3px;
+    border-radius: .5em;
+  background-color: rgba(255, 255, 255, .8);
   text-align: center;
-  padding: 10px 0;
-  margin-left: 37%;
-  margin-top: -.5%;
+  padding: .5em;
+  height: 100%;
+}
+.clock {
+  height: 100%;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'topleft names topright'
-    'bottomleft names bottomright'
-    'footer footer footer';
-  grid-gap: 5px;
-
-  padding: 5px;
-  justify-content: center;
-  margin: -10px;
-}
-#employees {
-  grid-column: 2;
-  grid-row: 1 / 3;
-  position: relative;
-  height:80vh;
-  padding: 10px;
-  float: center;
+#logo {
+  width:100%;
 }
 
 .grid-container > div {
@@ -58,33 +71,20 @@ body {
   text-align: center;
   padding: 10px 0;
   font-size: 1em;
+  justify-content: center;
+}
 
-
-}
-#th {
-  width: 100%;
-  color: #BD2031;
-}
-#thname {
-  float: left;
-}
-#thoffice {
-  float: right;
-}
 #employees > #emptable {
-  margin-top: 20%;
   display: none;
   position: absolute;
+  top: 5%;
   left: 10px;
   right: 10px;
   bottom: 10px;
   width: 95%;
-  height: 92%;
+  height: 95%;
+}
 
-}
-#eventshead {
-  color: #BD2031;
-}
 #events > #eventdiv {
   display: none;
   position: absolute;
@@ -96,21 +96,13 @@ body {
   height: 90%;
 
 }
-#eventdiv1 {
-  margin-top: 10%;
-  font-size: 150%;
-  display: block;
-}
+
 
 #eventtext {
   text-align: center;
+  font-size: 150%;
 }
-.imgs {
-  position: relative;
-  width: 35vw;
-  height: 40vh;
 
-}
 .imgs > div {
   position: absolute;
   top: 10px;
@@ -124,32 +116,18 @@ div img{
   max-width: 100%;
   max-height: 100%;
   object-fit:contain;
+  text-align: center;
+
 }
 video{
   border-radius: .5em;
-  overflow: hidden;
   max-width: 100%;
   max-height: 100%;
   object-fit:contain;
+
 }
 #employees {
   overflow: hidden;
   width: 25vw;
-  height: 81vh;
   object-fit:contain;
-}
-td {
-  float: left;
-
-}
-td#office {
-  float: right;
-}
-#footer {
-  width: 100%;
-  grid-column: 1/4;
-  border:none;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: url("./images/template/UW_Logo.png");
-  background-repeat: no-repeat;
 }
