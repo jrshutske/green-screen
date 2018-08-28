@@ -4,7 +4,6 @@
 node_modules/
 
 # greenscreen -- files that shouldn't be stored in gitlab
-public/images/
 images.json
 eventData.txt
 eventData.json
