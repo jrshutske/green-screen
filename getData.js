@@ -8,7 +8,7 @@ module.exports = {
   //grab XML from sharepoint list and return JSON formatted string.
   getSharePointData: function() {
     //curl to .txt file
-    shell.exec("curl --ntlm -u CENSORED 'https://intranet.wei.wisc.edu/toolsportal/people/_layouts/15/listfeed.aspx?List=bef8adc8-42f3-4eef-92eb-d5424e185da7&View=9a9091f8-3b80-4f21-a7da-541ba8bc97b0' > ./spData.txt")
+    shell.exec("curl --ntlm -u ${CURL_USER}:${CURL_PASS} ${CURL_URL} > ./spData.txt")
     shell.exec("curl 'https://energy.wisc.edu/events/feed' > ./eventData.txt")
 
     //grants ability to read .txt files from filesystem

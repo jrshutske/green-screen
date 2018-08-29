@@ -1,10 +1,8 @@
 {
     "topleft": [
-        ".DS_Store",
         "weinoon.mp4"
     ],
     "bottomleft": [
-        ".DS_Store",
         "2012 Science Expeditions Fermentation in a Bag_6950938748_l.jpg",
         "2012 Science Expeditions Fermentation in a Bag_6950939240_l.jpg",
         "2012 Science Expeditions Fermentation in a Bag_6950990828_l.jpg",
@@ -29,7 +27,6 @@
         "deLeon_4_w.jpg"
     ],
     "topright": [
-        ".DS_Store",
         "20080714kbs_ks0730-1_3510846162_l.jpg",
         "Arlington_8589670361_l.jpg",
         "BIE Lab Tours_7796880072_l.jpg",
@@ -71,9 +68,5 @@
         "feild_shots-26-4060_4304149605_l.jpg",
         "plant analysis_fig 2012 arlington.jpg",
         "stacks of petri dishes_currie lab 1 - Photo by John_5981827166_l.jpg"
-    ],
-    "bottomright": [
-        ".DS_Store",
-        "Energy Summit Video Final-20161010.mp4"
     ]
 }
