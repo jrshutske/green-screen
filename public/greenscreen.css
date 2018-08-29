@@ -20,6 +20,7 @@ body {
 .room {
   white-space: nowrap;
 }
+
 .row {
   justify-content: center;
 }
@@ -30,6 +31,7 @@ body {
 .topright>div>img, .bottomleft > div  > img {
   height: 100% !important;
 }
+
 .topleft, .topright, .bottomleft, .bottomright, .names {
   background-color: white;
   border-width: thick;
@@ -52,6 +54,7 @@ body {
 .clock {
   height: 100%;
 }
+
 #logo {
   width:100%;
 }
@@ -86,7 +89,7 @@ body {
   right: 10px;
   bottom: 10px;
 }
-div img {
+div img{
   border-radius: .5em;
   overflow: hidden;
   max-width: 100%;
@@ -94,8 +97,9 @@ div img {
   object-fit:contain;
   text-align: center;
 }
-video {
+video{
   border-radius: 1em;
   max-width: 100%;
   max-height: 100%;
+
 }
