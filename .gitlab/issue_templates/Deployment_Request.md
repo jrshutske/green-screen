@@ -9,7 +9,7 @@
 
 ## deploy process
 
-- [ ] update changelog.md - @MENTIONYOURSELF
+- [ ] update release info in tag - @MENTIONYOURSELF
 - [ ] snapshot vm - _sysops_
    - [ ] skipped / unneeded
    - [ ] completed
@@ -31,12 +31,9 @@
 
 ```bash
 ## WEBAPP DEPLOYMENT STEPS:
-# add images to ./images/topright
-# add images to ./images/bottomleft
-# add video to ./images/topleft
-# add video to ./images/bottomright
+# add images to ./images/ from \\file.glbrc.org\shared\6.2.1 Norman\Private\green-screen-images using directions in wiki
+# install dependencies into local node_modules folder
 npm install
-http-server -c-1
 ```
 
 ## notes
