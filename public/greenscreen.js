@@ -84,7 +84,7 @@ $(document).ready(function(){
       .fadeIn(2000)
       .end()
       .appendTo('#employees');
-  },  3000);
+  },  12000);
   setInterval(myTimer, 100000);
   myTimer();
   function myTimer() {
@@ -135,7 +135,7 @@ $(document).ready(function(){
     .fadeIn(2000)
     .end()
     .appendTo('#events');
-  },  3000);
+  },  10000);
   setInterval(myTimer2, 100000);
   myTimer2();
   function myTimer2() {
