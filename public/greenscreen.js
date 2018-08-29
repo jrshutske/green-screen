@@ -52,9 +52,8 @@ $(document).ready(function(){
     $.getJSON("images.json", function(images) {
       tlLength = Object.keys(images.topleft).length;
       trLength = Object.keys(images.topright).length;
-      brLength = Object.keys(images.bottomright).length;
       blLength = Object.keys(images.bottomleft).length;
-      for (var r = 1; r < trLength; r++) {
+      for (var r = 0; r < trLength; r++) {
         var trimg = document.createElement('img');
         var trdiv = document.createElement('div');
         trdiv.id = "trdiv" + r
@@ -63,7 +62,7 @@ $(document).ready(function(){
         document.getElementById('trdiv' + r).appendChild(trimg);
       }
       $("#topright > div:gt(0)").hide();
-      for (var l = 1; l < blLength; l++) {
+      for (var l = 0; l < blLength; l++) {
         var blimg = document.createElement('img');
         var bldiv = document.createElement('div');
         bldiv.id = "bldiv" + l
@@ -73,7 +72,7 @@ $(document).ready(function(){
       }
       $("#bottomleft > div:gt(0)").hide();
       var tlsource1 = document.createElement('source');
-      tlsource1.src = '/images/topleft/' + images.topleft[1];
+      tlsource1.src = '/images/topleft/' + images.topleft[0];
       document.getElementById('myvideo1').appendChild(tlsource1);
       tlsource1.type = "video/mp4";
     });
@@ -85,7 +84,7 @@ $(document).ready(function(){
       .fadeIn(2000)
       .end()
       .appendTo('#employees');
-  },  11000);
+  },  3000);
   setInterval(myTimer, 100000);
   myTimer();
   function myTimer() {
@@ -108,6 +107,8 @@ $(document).ready(function(){
         var td1 = document.createElement('td');
         var td2 = document.createElement('td');
         $(td2).attr("id","office");
+        $(td1).attr("class","col-3");
+        $(td2).attr("class","col-3");
         var empName = document.createTextNode(employeeName);
         var empOffice = document.createTextNode(officeNumber);
         td1.appendChild(empName);
@@ -116,7 +117,7 @@ $(document).ready(function(){
         tr.appendChild(td2);
         table.appendChild(tr);
         test++
-        if(test !== 0 && test % 20 === 0) {
+        if(test !== 0 && test % 26 === 0) {
           document.getElementById("employees").appendChild(table);
           var table = document.createElement('table');
           table.setAttribute("id", "emptable");
@@ -134,7 +135,7 @@ $(document).ready(function(){
     .fadeIn(2000)
     .end()
     .appendTo('#events');
-  },  12000);
+  },  3000);
   setInterval(myTimer2, 100000);
   myTimer2();
   function myTimer2() {
@@ -155,8 +156,8 @@ $(document).ready(function(){
         var p2 = document.createElement('p');
         var eventName = document.createTextNode(eventName);
         var eventDate = document.createTextNode(eventDate);
-        p1.appendChild(eventDate);
-        p2.appendChild(eventName);
+        p1.appendChild(eventName);
+        p2.appendChild(eventDate);
         $(p1).attr("id","eventtext");
         $(p2).attr("id","eventtext");
         div.appendChild(p1);
