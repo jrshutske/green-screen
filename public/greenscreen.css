@@ -20,7 +20,6 @@ body {
 .room {
   white-space: nowrap;
 }
-
 .row {
   justify-content: center;
 }
@@ -31,7 +30,6 @@ body {
 .topright>div>img, .bottomleft > div  > img {
   height: 100% !important;
 }
-
 .topleft, .topright, .bottomleft, .bottomright, .names {
   background-color: white;
   border-width: thick;
@@ -41,11 +39,6 @@ body {
     border-radius: .5em;
   background-color: rgba(255, 255, 255, .8);
 }
-
-.footer > div {
-  padding:0;
-}
-
 #weather {
   box-sizing: border-box;
   border: 1px solid #BD2031;
@@ -59,12 +52,9 @@ body {
 .clock {
   height: 100%;
 }
-
 #logo {
   width:100%;
 }
-
-
 #employees > #emptable {
   display: none;
   position: absolute;
@@ -96,18 +86,16 @@ body {
   right: 10px;
   bottom: 10px;
 }
-div img{
+div img {
   border-radius: .5em;
   overflow: hidden;
   max-width: 100%;
   max-height: 100%;
   object-fit:contain;
   text-align: center;
-
 }
-video{
+video {
   border-radius: 1em;
   max-width: 100%;
   max-height: 100%;
-
 }
