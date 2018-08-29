@@ -8,8 +8,8 @@ module.exports = {
   //grab XML from sharepoint list and return JSON formatted string.
   getSharePointData: function() {
     //curl to .txt file
-    shell.exec("curl --ntlm -u ${CURL_USER}:${CURL_PASS} ${CURL_URL} > ./spData.txt")
-    shell.exec("curl 'https://energy.wisc.edu/events/feed' > ./eventData.txt")
+    shell.exec("curl -sSL --ntlm -u ${CURL_USER}:${CURL_PASS} ${CURL_URL} > ./spData.txt")
+    shell.exec("curl -sSL 'https://energy.wisc.edu/events/feed' > ./eventData.txt")
 
     //grants ability to read .txt files from filesystem
     require.extensions['.txt'] = function (module, filename) {
