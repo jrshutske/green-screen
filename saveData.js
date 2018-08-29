@@ -23,19 +23,3 @@ function saveData() {
 }
 //initial data save
 saveData();
-//timed data save
-setInterval(function(){
-  saveData();
-}, 7200000);
-
-
-
-
-
-
-
-
-
-
-//spData = spData.toString();
-//'./green-screen.html'.getElementById("slideshow").innerHTML = "Hello World!";
