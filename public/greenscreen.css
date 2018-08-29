@@ -9,12 +9,15 @@ body {
   height:100vh;
   box-sizing: border-box;
 }
+.container-fluid {
+  padding-top:.5%;
+  padding-bottom:.5%;
+}
 .boxes{
   padding-right:.5%;
   padding-left:.5%;
 }
 .room {
-
   white-space: nowrap;
 }
 
@@ -52,7 +55,6 @@ body {
   background-color: rgba(255, 255, 255, .8);
   text-align: center;
   padding: .5em;
-  height: 100%;
 }
 .clock {
   height: 100%;
@@ -62,47 +64,31 @@ body {
   width:100%;
 }
 
-.grid-container > div {
-  box-sizing: border-box;
-  border: 1px solid #BD2031;
-    border-width: 3px;
-    border-radius: .5em;
-  background-color: rgba(255, 255, 255, .8);
-  text-align: center;
-  padding: 10px 0;
-  font-size: 1em;
-  justify-content: center;
-}
 
 #employees > #emptable {
   display: none;
   position: absolute;
-  top: 5%;
+  height:100%
   left: 10px;
   right: 10px;
-  bottom: 10px;
-  width: 95%;
-  height: 95%;
 }
-
 #events > #eventdiv {
   display: none;
   position: absolute;
-
   left: 10px;
   right: 10px;
-  bottom: 10px;
   width: 95%;
   height: 90%;
-
 }
-
-
-#eventtext {
+#events {
+  margin-top: 10%;
+  margin-bottom:20%;
+}
+#eventdiv {
+  padding-top:10%;
   text-align: center;
   font-size: 150%;
 }
-
 .imgs > div {
   position: absolute;
   top: 10px;
@@ -120,14 +106,8 @@ div img{
 
 }
 video{
-  border-radius: .5em;
+  border-radius: 1em;
   max-width: 100%;
   max-height: 100%;
-  object-fit:contain;
 
-}
-#employees {
-  overflow: hidden;
-  width: 25vw;
-  object-fit:contain;
 }
