@@ -15,7 +15,6 @@ function saveData() {
   myfiles.topleft = fs.readdirSync('./public/images/topleft');
   myfiles.bottomleft = fs.readdirSync('./public/images/bottomleft');
   myfiles.topright = fs.readdirSync('./public/images/topright');
-  myfiles.bottomright =fs.readdirSync('./public/images/bottomright');
 
   fs.writeFile('./public/images.json', JSON.stringify(myfiles, null, 4), function (err) {
     if (err) throw err;
