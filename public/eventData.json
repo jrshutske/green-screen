@@ -1,6 +1,14 @@
 {
     "event0": {
         "name": {
+            "_text": "Distinguished Lecture in Microbiology: Yong-Su Jin, University of Illinois"
+        },
+        "date": {
+            "_text": "September 13, 2018 – 3:30 PM"
+        }
+    },
+    "event1": {
+        "name": {
             "_text": "Energy Insecurity and Social Justice"
         },
         "date": {

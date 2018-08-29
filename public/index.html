@@ -1,69 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="greenscreen.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="greenscreen.css">
 </head>
 <body>
-<script src="./greenscreen.js"></script>
 
 
-<div class="container-fluid">
 
-  <div class="row">
-    <div class="col-4 boxes">
-      <div class="col-12 mt-1 topleft" id="topleft"><video class="h-100 w-100" id="myvideo1" autoplay loop muted></video></div>
-      <div class="col-12 mt-1 bottomleft imgs text-center" id="bottomleft"></div>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-4 boxes">
+        <div class="col-12 mt-1 topleft" id="topleft"><video class="h-100 w-100" id="myvideo1" autoplay loop muted></video>
+        </div>
+          <div class="col-12 mt-1 bottomleft imgs text-center" id="bottomleft">
+          </div>
+      </div>
+      <div class="col-3 mt-1 names">
+        <div class="row justify-content-between">
+          <h4 class="col-4 name text-danger">Name</h4>
+          <h4 class="col-4 room text-danger">Room #</h4>
+        </div>
+        <div id="employees">
+        </div>
+      </div>
+      <div class="col-4 boxes">
+        <div class="col-12 mt-1 topright imgs text-center align-middle" id="topright">
+        </div>
+        <div class="col-12 mt-1 bottomright">
+          <div class="row">
+            <h1 class="col-12 text-center bold text-danger" id="eventshead">Upcoming Events</h1>
+          </div>
+          <div class="col-12" id="events">
+          </div>
+        </div>
     </div>
-
-    <div class="col-3 mt-1 names"><div class="row justify-content-between"><h4 class="col-4 name text-danger">Name</h4><h4 class="col-4 room text-danger">Room #</h4></div><div id="employees"></div></div>
-
-    <div class="col-4 boxes">
-      <div class="col-12 mt-1 topright imgs text-center align-middle" id="topright"></div>
-      <div class="col-12 mt-1 bottomright"><div class="row"><h1 class="col-12 text-center bold text-danger" id="eventshead">Upcoming Events</h1></div><div class="col-12" id="events"></div></div>
-    </div>
-
   </div>
-
-
   <div class="row mt-2">
-
-  <div class="col-4 boxes">
-    <div id="weather">
-
-      <a class="weatherwidget-io" href="https://forecast7.com/en/43d07n89d40/madison/?unit=us" data-font="Roboto" data-icons="Climacons Animated" data-mode="Forecast" data-days="5" data-theme="pure" data-basecolor="rgba(255, 255, 255, 0)" >Madison, Wisconsin, USA</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+    <div class="col-4 boxes">
+      <div id="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/43d07n89d40/madison/?unit=us" data-font="Roboto" data-icons="Climacons Animated" data-mode="Forecast" data-days="5" data-theme="pure" data-basecolor="rgba(255, 255, 255, 0)" >Madison, Wisconsin, USA</a>
+        <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+          </script>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="col-12 font-weight-bold display-4 text-danger text-center" id="clocktime">
+        </div>
+        <div class="col-12 h1 text-center" id="clockbox">
+        </div>
+      </div>
+      <div class="col-4"><img id="logo" src="./images/template/UW_Logo.png"></img></div>
     </div>
   </div>
-  <div class="col-3"><div class="col-12 font-weight-bold display-4 text-danger text-center" id="clocktime"></div><div class="col-12 h1 text-center" id="clockbox"></div></div>
-<div class="col-4"><img id="logo" src="./images/template/UW_Logo.png"></img></div>
-</div>
-</div>
-</div>
+
 </body>
 </html>
-<script type="text/javascript">
-    var tmonth=["Jan.","Feb.","Mar.","Apr.","May","Jun.","Jul.","Aug.","Sept.","Oct.","Nov.","Dec."];
-    function GetClock(){
-      var d=new Date();
-      var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-      var nhour=d.getHours(),nmin=d.getMinutes(),ap;
-      if(nhour==0){ap=" AM";nhour=12;}
-      else if(nhour<12){ap=" AM";}
-      else if(nhour==12){ap=" PM";}
-      else if(nhour>12){ap=" PM";nhour-=12;}
-      if(nmin<=9) nmin="0"+nmin;
-      var clocktext=""+tmonth[nmonth]+" "+ndate+"-"+nyear+""
-      var clocktime = ""+nhour+":"+nmin+ap+"";
-      document.getElementById('clockbox').innerHTML=clocktext;
-      document.getElementById('clocktime').innerHTML=clocktime;
-    }
-    GetClock();
-    setInterval(GetClock,1000);
-</script>
+<script src="./greenscreen.js"></script>
