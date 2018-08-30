@@ -3,8 +3,19 @@ image: node:10.8
 stages:
   - test
 
-test_nodejs:
+node_ci:
   stage: test
   script:
-  ## NODEJS APP CMDS
+  ## nodejs -- prod setup dry run
   - npm install --only=production
+    # create blank dir structure that is expected by saveData.js
+  - mkdir -p public/images/{bottomleft,bottomright,template,topleft,topright}
+  - node saveData.js
+
+node_eslint:
+  stage: test
+  allow_failure: true
+  script:
+  ## eslint -- code linting during ci
+  - npm install
+  - ./node_modules/.bin/eslint --ignore-path .gitignore .
