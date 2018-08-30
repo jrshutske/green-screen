@@ -170,7 +170,7 @@ $(document).ready(function() {
       .fadeIn(2000)
       .end()
       .appendTo('#events');
-  }, 10000);
+  }, 4000);
   setInterval(myTimer2, 100000);
   myTimer2();
   function myTimer2() {
