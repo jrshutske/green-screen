@@ -111,7 +111,7 @@ $(document).ready(function() {
       .fadeIn(2000)
       .end()
       .appendTo('#employees');
-  }, 4000);
+  }, 8000);
   setInterval(myTimer, 100000);
   myTimer();
   function myTimer() {
@@ -152,7 +152,7 @@ $(document).ready(function() {
         tr.appendChild(td2);
         table.appendChild(tr);
         test++;
-        if (test !== 0 && test % 20 === 0) {
+        if (test !== 0 && test % 19 === 0) {
           document.getElementById('employees').appendChild(table);
           var table = document.createElement('table');
           table.setAttribute('id', 'emptable');
