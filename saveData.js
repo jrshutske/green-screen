@@ -23,23 +23,23 @@ function saveData() {
   imagefiles = {};
   imagefiles.topleft = fs.readdirSync('./public/images/topleft');
   imagefiles.bottomleft = fs.readdirSync('./public/images/bottomleft');
-  imagefiles.topright = fs.readdirSync('./public/images/topright');
+  imagefiles.bottomright = fs.readdirSync('./public/images/bottomright');
 
   //filer out non image/video files from json obj
 
-  var newTopRight = [];
-  for (var i in imagefiles.topright) {
+  var newBottomRight = [];
+  for (var i in imagefiles.bottomright) {
     if (
-      path.extname(imagefiles.topright[i]) === '.jpg' ||
-      path.extname(imagefiles.topright[i]) === '.png' ||
-      path.extname(imagefiles.topright[i]) === '.jpeg' ||
-      path.extname(imagefiles.topright[i]) === '.avi' ||
-      path.extname(imagefiles.topright[i]) === '.mp4'
+      path.extname(imagefiles.bottomright[i]) === '.jpg' ||
+      path.extname(imagefiles.bottomright[i]) === '.png' ||
+      path.extname(imagefiles.bottomright[i]) === '.jpeg' ||
+      path.extname(imagefiles.bottomright[i]) === '.avi' ||
+      path.extname(imagefiles.bottomright[i]) === '.mp4'
     ) {
-      newTopRight.push(imagefiles.topright[i]);
+      newBottomRight.push(imagefiles.bottomright[i]);
     }
   }
-  imagefiles.topright = newTopRight;
+  imagefiles.bottomright = newBottomRight;
 
   var newTopLeft = [];
   for (var i in imagefiles.topleft) {
