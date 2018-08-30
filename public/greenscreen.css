@@ -9,14 +9,13 @@ body {
   height:100vh;
   box-sizing: border-box;
 }
+
 .container-fluid {
+  margin-top: 1%;
   padding-top:.5%;
   padding-bottom:.5%;
 }
-.boxes{
-  padding-right:.5%;
-  padding-left:.5%;
-}
+
 .room {
   white-space: nowrap;
 }
@@ -24,11 +23,13 @@ body {
 .row {
   justify-content: center;
 }
-.topleft, .topright, .bottomleft, .bottomright {
-  height: 40vh;
-
+.topleft, .topright {
+  height: 30vh;
 }
-.topright>div>img, .bottomleft > div  > img {
+.bottomleft, .bottomright {
+  height: 45vh
+}
+.bottomright>div>img, .bottomleft > div  > img {
   height: 100% !important;
 }
 
@@ -49,21 +50,26 @@ body {
     border-radius: .5em;
   background-color: rgba(255, 255, 255, .8);
   text-align: center;
-  padding: .5em;
+  padding: 3%;
 }
+.weatherwidget-io {
+  height: 20vh;
+}
+
 .clock {
   height: 100%;
 }
 
-#logo {
-  width:100%;
-}
 #employees > #emptable {
   display: none;
   position: absolute;
   height:100%
   left: 10px;
   right: 10px;
+  font-size: 125%
+}
+#eventshead {
+  margin-top:4%
 }
 #events > #eventdiv {
   display: none;
@@ -75,10 +81,10 @@ body {
 }
 #events {
   margin-top: 10%;
-  margin-bottom:20%;
+  margin-bottom:10%;
 }
 #eventdiv {
-  padding-top:10%;
+
   text-align: center;
   font-size: 150%;
 }

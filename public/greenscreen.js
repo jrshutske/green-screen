@@ -1,3 +1,5 @@
+var x = document.getElementsByClassName("example");
+
 var tmonth = [
   'Jan.',
   'Feb.',
@@ -16,7 +18,7 @@ function GetClock() {
   var d = new Date();
   var nmonth = d.getMonth(),
     ndate = d.getDate(),
-    nyear = d.getFullYear();
+    nyear = d.getFullYear().toString().substr(-2);
   var nhour = d.getHours(),
     nmin = d.getMinutes(),
     ap;
@@ -52,12 +54,12 @@ $(document).ready(function() {
   myImageTimer();
   setTimeout(function() {
     setInterval(function() {
-      $('#topright > div:first')
+      $('#bottomright > div:first')
         .fadeOut(2000)
         .next()
         .fadeIn(2000)
         .end()
-        .appendTo('#topright');
+        .appendTo('#bottomright');
     }, 9000);
   }, 4500);
   setTimeout(function() {
@@ -72,20 +74,21 @@ $(document).ready(function() {
   }, 0000);
   function myImageTimer() {
     $('#bottomleft > div > img').remove();
-    $('#topright > div > img').remove();
+    $('#bottomright > div > img').remove();
     $.getJSON('images.json', function(images) {
       tlLength = Object.keys(images.topleft).length;
-      trLength = Object.keys(images.topright).length;
+      brLength = Object.keys(images.bottomright).length;
+      console.log(brLength)
       blLength = Object.keys(images.bottomleft).length;
-      for (var r = 0; r < trLength; r++) {
-        var trimg = document.createElement('img');
-        var trdiv = document.createElement('div');
-        trdiv.id = 'trdiv' + r;
-        trimg.src = '/images/topright/' + images.topright[r];
-        document.getElementById('topright').appendChild(trdiv);
-        document.getElementById('trdiv' + r).appendChild(trimg);
+      for (var r = 0; r < brLength; r++) {
+        var brimg = document.createElement('img');
+        var brdiv = document.createElement('div');
+        brdiv.id = 'brdiv' + r;
+        brimg.src = '/images/bottomright/' + images.bottomright[r];
+        document.getElementById('bottomright').appendChild(brdiv);
+        document.getElementById('brdiv' + r).appendChild(brimg);
       }
-      $('#topright > div:gt(0)').hide();
+      $('#bottomright > div:gt(0)').hide();
       for (var l = 0; l < blLength; l++) {
         var blimg = document.createElement('img');
         var bldiv = document.createElement('div');
@@ -108,7 +111,7 @@ $(document).ready(function() {
       .fadeIn(2000)
       .end()
       .appendTo('#employees');
-  }, 12000);
+  }, 8000);
   setInterval(myTimer, 100000);
   myTimer();
   function myTimer() {
@@ -149,7 +152,7 @@ $(document).ready(function() {
         tr.appendChild(td2);
         table.appendChild(tr);
         test++;
-        if (test !== 0 && test % 26 === 0) {
+        if (test !== 0 && test % 19 === 0) {
           document.getElementById('employees').appendChild(table);
           var table = document.createElement('table');
           table.setAttribute('id', 'emptable');
@@ -167,7 +170,7 @@ $(document).ready(function() {
       .fadeIn(2000)
       .end()
       .appendTo('#events');
-  }, 10000);
+  }, 8000);
   setInterval(myTimer2, 100000);
   myTimer2();
   function myTimer2() {
