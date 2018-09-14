@@ -8,6 +8,7 @@ body {
   width:100vw;
   height:100vh;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .container-fluid {
@@ -63,10 +64,10 @@ body {
 #employees > #emptable {
   display: none;
   position: absolute;
-  height:100%
-  left: 10px;
-  right: 10px;
-  font-size: 125%
+  max-height:80%;
+  left: 0px;
+  right: 0px;
+  font-size: 125%;
 }
 #eventshead {
   margin-top:4%
