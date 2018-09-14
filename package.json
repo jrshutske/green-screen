@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "fast-xml-parser": "^3.11.1",
+    "http-server": "^0.11.1",
     "parse-num": "^1.0.0",
     "shelljs": "^0.8.2",
     "xml-js": "^1.6.7",
