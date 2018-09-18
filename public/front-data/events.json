@@ -1,0 +1,50 @@
+{
+    "event0": {
+        "name": {
+            "_text": "Renewable Energy is Not Comparable to Fossil Fuels; Energy vs. Energy Carriers"
+        },
+        "date": {
+            "_text": "September 10, 2018 – 3:30 PM"
+        }
+    },
+    "event1": {
+        "name": {
+            "_text": "Distinguished Lecture in Microbiology: Yong-Su Jin, University of Illinois"
+        },
+        "date": {
+            "_text": "September 13, 2018 – 3:30 PM"
+        }
+    },
+    "event2": {
+        "name": {
+            "_text": "Electric Vehicles: Get on the fuel efficiency fast track"
+        },
+        "date": {
+            "_text": "September 14, 2018 – 8:30 AM"
+        }
+    },
+    "event3": {
+        "name": {
+            "_text": "Electrochemical Production of Valued-Added Chemicals and Storing Solar Energy in Solar Flow Batteries"
+        },
+        "date": {
+            "_text": "September 24, 2018 – 3:30 PM"
+        }
+    },
+    "event4": {
+        "name": {
+            "_text": "Energy Insecurity and Social Justice"
+        },
+        "date": {
+            "_text": "September 25, 2018 – 4:30 PM"
+        }
+    },
+    "event5": {
+        "name": {
+            "_text": "21st Century Nuclear Energy"
+        },
+        "date": {
+            "_text": "October 8, 2018 – 3:30 PM"
+        }
+    }
+}

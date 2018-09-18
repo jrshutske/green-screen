@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" type="text/css" href="greenscreen.css">
-  <link rel="shortcut icon" href="./images/template/UW_favicon.ico" type="image/x-icon">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="shortcut icon" href="./images/template/UW_favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
+    <div class="container-fluid">
 
-
-  <div class="container-fluid">
-
-    <div class="row">
-      <div class="col-4 boxes">
-        <div class="col-12 mt-1 topleft" id="topleft"><video class="h-100 w-100" id="myvideo1" autoplay loop muted></video>
-        </div>
-          <div class="col-12 mt-1 bottomleft imgs text-center" id="bottomleft">
-          </div>
-      </div>
-      <div class="col-3 mt-1 names">
-        <div class="col-12 text-center">
-          <img src="./images/template/UW_Logo.png">
-        </div>
-        <div class="col-12">
-          <div class="col-12 text-center">
-            <div class="col-12 text-center h3 bold text-danger" id="eventshead">Building Directory
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-2 text-danger">Name</div>
-          <div class="col-2 room text-danger">Room #</div>
-        </div>
-        <div id="employees">
-        </div>
-      </div>
-      <div class="col-4 boxes">
-      <div class="col-12 mt-1 topright text-center align-middle">
         <div class="row">
-          <div class="col-12 text-center h2 bold text-danger" id="eventshead">Upcoming Events
-          </div>
-        </div>
-        <div class="col-12" id="events">
-        </div>
-      </div>
+            <div class="col-4 boxes">
+                <div class="col-12 mt-1 topleft" id="topleft"><video class="h-100 w-100" id="myvideo1" autoplay loop muted></video>
+                </div>
+                <div class="col-12 mt-1 bottomleft imgs text-center" id="bottomleft">
+                </div>
+            </div>
+            <div class="col-3 mt-1 names">
+                <div class="col-12 text-center">
+                    <img src="./images/template/UW_Logo.png">
+                </div>
+                <div class="col-12">
+                    <div class="col-12 text-center">
+                        <div class="col-12 text-center h3 bold text-danger" id="eventshead">Building Directory
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-2 text-danger">Name</div>
+                    <div class="col-2 room text-danger">Room #</div>
+                </div>
+                <div id="employees">
+                </div>
+            </div>
+            <div class="col-4 boxes">
+                <div class="col-12 mt-1 topright text-center align-middle">
+                    <div class="row">
+                        <div class="col-12 text-center h2 bold text-danger" id="eventshead">Upcoming Events
+                        </div>
+                    </div>
+                    <div class="col-12" id="events">
+                    </div>
+                </div>
 
-        <div class="col-12 mt-1 bottomright imgs text-center align-middle" id="bottomright">
+                <div class="col-12 mt-1 bottomright imgs text-center align-middle" id="bottomright">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-8 boxes">
+                <div id="weather">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/43d07n89d40/madison/?unit=us" data-highcolor="#f90000" data-lowcolor="#3185ff" data-suncolor="#ffce00" data-mooncolor="#a5a5a5" data-cloudcolor="#c9c9c9" data-cloudfill="#ffffff" data-raincolor="#44a2ff" data-snowcolor="#ffffff">Madison, WI, USA</a>
+                    <script src="./scripts/weather.js"></script>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-12 font-weight-bold display-2 text-danger text-center" id="clocktime">
+                </div>
+                <div class="col-12 h1 text-center" id="clockbox">
+                </div>
+            </div>
         </div>
     </div>
-  </div>
-  <div class="row mt-2">
-    <div class="col-8 boxes">
-      <div id="weather">
-        <a class="weatherwidget-io" href="https://forecast7.com/en/43d07n89d40/madison/?unit=us" data-highcolor="#f90000" data-lowcolor="#3185ff" data-suncolor="#ffce00" data-mooncolor="#a5a5a5" data-cloudcolor="#c9c9c9" data-cloudfill="#ffffff" data-raincolor="#44a2ff" data-snowcolor="#ffffff" >Madison, WI, USA</a>
-          <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-          </script>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="col-12 font-weight-bold display-2 text-danger text-center" id="clocktime">
-        </div>
-        <div class="col-12 h1 text-center" id="clockbox">
-        </div>
-      </div>
-    </div>
-  </div>
 
 </body>
+
 </html>
-<script src="./greenscreen.js"></script>
+
+<script src="./scripts/clock.js"></script>
+<script src="./scripts/video.js"></script>
+<script src="./scripts/images.js"></script>
+<script src="./scripts/directory.js"></script>
+<script src="./scripts/events.js"></script>
+<script src="./scripts/greenscreen.js"></script>
+<script src="./scripts/refresh.js"></script>

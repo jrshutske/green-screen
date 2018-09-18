@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("./images/template/UW_Gradient_1920x1080.png"), url("./images/template/WEI-Building-1.jpg");
+  background-image: url("../images/template/UW_Gradient_1920x1080.png"), url("../images/template/WEI-Building-1.jpg");
   background-size: cover;
   width:100vw;
   height:100vh;

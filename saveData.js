@@ -6,14 +6,14 @@ var path = require('path');
 //writes JSON strings to .json files to be read later by application
 function saveData() {
   fs.writeFile(
-    './public/spData.json',
+    './public/front-data/directory.json',
     getData.getSharePointData().employeejson,
     function(err) {
       if (err) throw err;
     },
   );
   fs.writeFile(
-    './public/eventData.json',
+    './public/front-data/events.json',
     getData.getSharePointData().eventjson,
     function(err) {
       if (err) throw err;
@@ -26,7 +26,6 @@ function saveData() {
   imagefiles.bottomright = fs.readdirSync('./public/images/bottomright');
 
   //filer out non image/video files from json obj
-
   var newBottomRight = [];
   for (var i in imagefiles.bottomright) {
     if (
@@ -70,7 +69,7 @@ function saveData() {
   imagefiles.bottomleft = newBottomLeft;
 
   fs.writeFile(
-    './public/images.json',
+    './public/front-data/images.json',
     JSON.stringify(imagefiles, null, 4),
     function(err) {
       if (err) throw err;

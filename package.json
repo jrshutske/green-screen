@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "fast-xml-parser": "^3.11.1",
+    "gulp": "^3.9.1",
+    "gulp-eslint-auto-fix": "^1.1.0",
     "http-server": "^0.11.1",
     "parse-num": "^1.0.0",
     "shelljs": "^0.8.2",

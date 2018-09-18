@@ -8,10 +8,10 @@ module.exports = {
   getSharePointData: function() {
     //curl to .txt file
     shell.exec(
-      'curl -sSL --ntlm -u ${CURL_USER}:${CURL_PASS} ${CURL_URL} > ./spData.txt',
+      'curl -sSL --ntlm -u ${CURL_USER}:${CURL_PASS} ${CURL_URL} > ./back-data/directory.txt',
     );
     shell.exec(
-      "curl -sSL 'https://energy.wisc.edu/events/feed' > ./eventData.txt",
+      'curl -sSL "https://energy.wisc.edu/events/feed" > ./back-data/events.txt',
     );
 
     //grants ability to read .txt files from filesystem
@@ -19,7 +19,7 @@ module.exports = {
       module.exports = fs.readFileSync(filename, 'utf8');
     };
     //open .txt (formatted as XML) and convert to JSON and parse
-    var xml1 = require('./spData.txt');
+    var xml1 = require('./back-data/directory.txt');
     var results1 = convert.xml2json(xml1, { compact: true, spaces: 2 });
     let resultsParsed1 = JSON.parse(results1);
     let resultsArray1 = resultsParsed1.rss.channel.item;
@@ -34,7 +34,7 @@ module.exports = {
       myJson1[empkey].office = offval;
     }
     //open .txt (formatted as XML) and convert to JSON and parse
-    var xml2 = require('./eventData.txt');
+    var xml2 = require('./back-data/events.txt');
     var results2 = convert.xml2json(xml2, { compact: true, spaces: 2 });
     let resultsParsed2 = JSON.parse(results2);
     let resultsArray2 = resultsParsed2.rss.channel.item;

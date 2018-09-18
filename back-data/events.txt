@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://energy.wisc.edu/events/feed">
+  <channel>
+    <title>Events</title>
+    <link>https://energy.wisc.edu/events/feed</link>
+    <description>Upcoming events from the Wisconsin Energy Institute</description>
+    <language>en</language>
+    
+    <item>
+  <title>Weston Roundtable: The 2018 Nuclear Futures Conversation on Communities</title>
+  <link>https://energy.wisc.edu/events/weston-roundtable-2018-nuclear-futures-conversation-communities</link>
+  <description>In May of 2018, 31 people from very different backgrounds, many of whom had never previously met, spent 2 days at the Taliesin Preservation in Spring Green, Wisconsin. The participants included community leaders, experts in environmental science and policy, political leaders, communications specialists, security authorities, a religious scholar, and nuclear professionals.</description>
+  <pubDate>September 20, 2018 – 4:15 PM</pubDate>
+    <dc:creator>mwisniewski</dc:creator>
+    <guid isPermaLink="false">f6a035f6-ea03-42b5-998f-2858e001e290</guid>
+    </item>
+<item>
+  <title>Electrochemical Production of Valued-Added Chemicals and Storing Solar Energy in Solar Flow Batteries</title>
+  <link>https://energy.wisc.edu/events/electrochemical-production-valued-added-chemicals-and-storing-solar-energy-solar-flow</link>
+  <description>In a free public seminar at 3:30 PM on September 24, in room 1115 of the Wisconsin Energy Institute, Chemistry Professor Song Jin will discuss research in producing value-added chemicals from solar energy as well as integrated solar and storage devices to deal with solar's inherent variability.
+
+Abstract:</description>
+  <pubDate>September 24, 2018 – 3:30 PM</pubDate>
+    <dc:creator>spwilliams</dc:creator>
+    <guid isPermaLink="false">f50aaedf-d09a-4a4c-a045-b0c33af988c4</guid>
+    </item>
+<item>
+  <title>Energy Insecurity and Social Justice</title>
+  <link>https://energy.wisc.edu/events/energy-insecurity-and-social-justice</link>
+  <description>Energy is essential to meeting our basic needs, yet many households struggle to balance energy costs with other necessities. For example, a recent survey from the Energy Information Administration found that one in five households reported reducing or forgoing basic necessities like food and medicine to pay an energy bill.</description>
+  <pubDate>September 25, 2018 – 4:30 PM</pubDate>
+    <dc:creator>mwitynski</dc:creator>
+    <guid isPermaLink="false">2f663093-1247-498d-9c96-8631db625b79</guid>
+    </item>
+<item>
+  <title>AESP Wisconsin Chapter Switch Event</title>
+  <link>https://energy.wisc.edu/events/aesp-wisconsin-chapter-switch-event</link>
+  <description>What's Switch? It's a fun evening where presenters have five minutes to share 20 slides that advance automatically every 15 seconds.</description>
+  <pubDate>September 27, 2018 – 6:30 PM</pubDate>
+    <dc:creator>mwisniewski</dc:creator>
+    <guid isPermaLink="false">204f83af-4cac-4866-a62a-4d1fe172d5e2</guid>
+    </item>
+<item>
+  <title>21st Century Nuclear Energy</title>
+  <link>https://energy.wisc.edu/events/21st-century-nuclear-energy</link>
+  <description>In a free public seminar at 3:30 PM on October 8, in room 1115 of the Wisconsin Energy Institute, Engineering Physics Professor Todd Allen will discuss the changing innovation landscape of nuclear energy technology.
+
+Abstract:</description>
+  <pubDate>October 8, 2018 – 3:30 PM</pubDate>
+    <dc:creator>spwilliams</dc:creator>
+    <guid isPermaLink="false">51341517-8167-4269-976b-fb62f3d25b89</guid>
+    </item>
+<item>
+  <title>Renewable Energy is Not Comparable to Fossil Fuels; Energy vs. Energy Carriers</title>
+  <link>https://energy.wisc.edu/events/renewable-energy-not-comparable-fossil-fuels-energy-vs-energy-carriers</link>
+  <description>In a free public seminar at 3:30 PM on October 22nd, in room 1115 of the Wisconsin Energy Institute, Professor Emeritus of Botany Timothy Allen, will discuss the complex challenges of transitioning from fossil fuels to renewable energy and the important differences between energy sources and energy carriers.
+
+Abstract:</description>
+  <pubDate>October 22, 2018 – 3:30 PM</pubDate>
+    <dc:creator>spwilliams</dc:creator>
+    <guid isPermaLink="false">6ab40cff-a336-4d41-b687-6ef6458b6ce0</guid>
+    </item>
+<item>
+  <title>Topic: Energy Policy and Renewable Energy Investment</title>
+  <link>https://energy.wisc.edu/events/topic-energy-policy-and-renewable-energy-investment</link>
+  <description>Sarah JohnstonIn a free public seminar at 3:30 PM on November 5, in room 1115 of the Wisconsin Energy Institute, UW-Madison Assistant Professor of Agricultural and</description>
+  <pubDate>November 5, 2018 – 3:30 PM</pubDate>
+    <dc:creator>mcollins</dc:creator>
+    <guid isPermaLink="false">c070dca0-2efa-4f8c-850b-ffeb475271a2</guid>
+    </item>
+<item>
+  <title>Topic: Advanced Electric Machines for Efficient Energy Conversion</title>
+  <link>https://energy.wisc.edu/events/topic-advanced-electric-machines-efficient-energy-conversion</link>
+  <description>Eric SeversonIn a free public seminar at 3:30 PM on November 19th, in room 1115 of the Wisconsin Energy Institute, UW–Madison Assistant Professor of Electrical and Compu</description>
+  <pubDate>November 19, 2018 – 3:30 PM</pubDate>
+    <dc:creator>mcollins</dc:creator>
+    <guid isPermaLink="false">6fc38a0c-2ec3-4268-bd90-71e19ec3a248</guid>
+    </item>
+<item>
+  <title>Topic: Energy Management at the U.S. Navy</title>
+  <link>https://energy.wisc.edu/events/topic-energy-management-us-navy</link>
+  <description>Greg ZacharskiIn a free public seminar at 3:30 PM on December 3rd, in room 1115 of the Wisconsin Energy Institute, UW–Madison Commanding Officer and Professor of Naval Science Greg Zacharski will give a talk on energy management in the U.S. Navy.</description>
+  <pubDate>December 3, 2018 – 3:30 PM</pubDate>
+    <dc:creator>mcollins</dc:creator>
+    <guid isPermaLink="false">efff2e58-0006-46e9-a456-3ada506fdc39</guid>
+    </item>
+
+  </channel>
+</rss>
