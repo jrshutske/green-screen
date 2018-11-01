@@ -13,7 +13,7 @@ production server (and gitlab ci!) requirements to run the green-screen nodejs w
 
 **image files:** `\\file.glbrc.org\shared\6.2.1 Norman\Private\green-screen-images`
 
-### nodejs app server
+## nodejs app server
 
 ```bash
 #curl
@@ -31,12 +31,12 @@ navigate to ./public/index.html
 - execute this command from within the webapp directory
 - the http-server module needs to be running on the host server to serve our nodejs app
 
-### environment variables
-# ${CURL_USER}    
+## environment variables
+### ${CURL_USER}    
 -stores sharepoint access username.   
-# ${CURL_PASS}   
+### ${CURL_PASS}   
 -stores sharepoint access password.   
-# ${CURL_URL}   
+### ${CURL_URL}   
 -stores sharepoint list url to be pulled.  
   
 
